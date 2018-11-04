@@ -1,2 +1,5 @@
 # AI-playground
-📦 Absolutely comfort box for you to play around with your AI pieces of stuff and see a lot of surprises indistinguishable from magic.
+📦 Absolutely comfort box for you to play around with your AI pieces of stuff and see a lot of surprises indistinguishable from magic. The major exploration topics includes:
+
+1. Machine Learning
+2. Deep Learning (e.g. visual, sequence and reinforcement learning)
