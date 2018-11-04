@@ -1,1 +1,1 @@
-My explorations in computer vision.
+My explorations of visual learning.

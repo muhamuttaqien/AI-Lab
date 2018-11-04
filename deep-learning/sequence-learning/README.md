@@ -1,1 +1,1 @@
-My explorations in deep learning.
+My explorations of sequence learning.
