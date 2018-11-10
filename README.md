@@ -1,4 +1,4 @@
-# AI-playground
+# AI-lab
 📦 Absolutely comfort lab for me to work around with my own AI pieces of stuff and see a lot of surprises indistinguishable from magic. The major exploration topics includes:
 
 1. Machine Learning
