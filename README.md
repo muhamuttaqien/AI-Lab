@@ -4,7 +4,7 @@
 1. Machine Learning
 2. Deep Learning (e.g. visual, sequence and reinforcement learning)
 
-In 2019, I have a big plan to release my products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Below is the list:
+In 2019, I have a big plan to release my products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Below is the list (as I visioned):
 
 [CV PRODUCTS]
 1. Object Classification
