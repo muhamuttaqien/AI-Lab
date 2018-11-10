@@ -4,7 +4,7 @@
 1. Machine Learning
 2. Deep Learning (e.g. visual, sequence and reinforcement learning)
 
-Next, I have a big plan to release my production based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Below is the list:
+Next, I have a big plan to release my products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Below is the list:
 
 [CV PRODUCT]
 1. Object Classification
