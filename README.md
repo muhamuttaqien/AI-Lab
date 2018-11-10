@@ -11,7 +11,7 @@ In 2019, I have a big plan to release my well-designed products based on Compute
 2. Object Detection
 3. Real-Time Object Detection
 4. Semantic & Instance Segmentation
-5. Pose Detection
+5. Human Pose Detection
 
 [NLP PRODUCTS]
 1. Machine Translation System
