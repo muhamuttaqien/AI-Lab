@@ -25,6 +25,6 @@ Next, I have a big plan to release my products based on Computer Vision (CV) and
 2. Image Captioning
 3. Dense Captioning
 4. Visual Question Answering
-5. Shape Generation
+5. Shape/ Object Generation
 
 And Reinforcement Learning (RL) product will come afterward...
