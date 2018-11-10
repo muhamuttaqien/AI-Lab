@@ -1,4 +1,4 @@
-# AI-lab
+# AI-Lab
 📦 Absolutely comfort lab for me to work around with my own A(G)I pieces of stuff and see a lot of surprises indistinguishable from magic. The major exploration topics include:
 
 1. Machine Learning
