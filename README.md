@@ -6,21 +6,21 @@
 
 Next, I have a big plan to release my products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Below is the list:
 
-[CV PRODUCT]
+[CV PRODUCTS]
 1. Object Classification
 2. Object Detection
 3. Real-Time Object Detection
 4. Semantic & Instance Segmentation
 5. Pose Detection
 
-[NLP PRODUCTION]
+[NLP PRODUCTS]
 1. Machine Translation System
 2. Search Engine System
 3. Text Summarisation
 4. Sentiment Analysis
 5. Chat-bot System
 
-[CV + NLP PRODUCTION]
+[CV + NLP PRODUCTS]
 1. Optical Character Recognition
 2. Image Captioning
 3. Dense Captioning
