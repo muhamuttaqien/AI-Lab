@@ -26,3 +26,5 @@ Next, I have a big plan to release my production based on Computer Vision (CV) a
 3. Dense Captioning
 4. Visual Question Answering
 5. Shape Generation
+
+And reinforcemant learning product will come afterward...
