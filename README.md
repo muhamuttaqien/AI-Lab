@@ -1,4 +1,7 @@
 # AI-Lab
+
+Created by: Muhammad Angga Muttaqien, in Jan 7, 2018
+
 📦 Absolutely comfort lab for me to work around with my own A(G)I pieces of stuff and see a lot of surprises indistinguishable from magic! The major exploration topics include:
 
 1. Machine Learning
