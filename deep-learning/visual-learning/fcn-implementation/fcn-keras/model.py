@@ -94,7 +94,8 @@ class FullyConvolutionalNetwork():
         p5 = Cropping2D(((2, 2), (2, 2)))(p5)
 
         # merge scores
-        h = merge([p3, p4, p5], mode="sum")
+        # h = merge([p3, p4, p5], mode="sum")
+        h = concatenate([p3, p4, p5])
 
         h = Deconvolution2D(self.FCN_CLASSES, 16, 16,
                 output_shape=(self.batchsize, self.FCN_CLASSES, 232, 232),
