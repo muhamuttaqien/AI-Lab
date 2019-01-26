@@ -18,8 +18,8 @@ In 2019, I have a big plan to release my own well-designed products based on Com
 [NLP PRODUCTS]
 1. Machine Translation System
 2. Search Engine System
-3. Text Summarisation
-4. Sentiment Analysis
+3. Social Media Information Summarisation/ Extraction
+4. Hate Speech/ Sentiment Analysis
 5. Chat-bot System
 
 [CV + NLP PRODUCTS]
