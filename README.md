@@ -5,6 +5,7 @@
 
 1. Machine Learning
 2. Deep Learning (e.g. visual, sequence and reinforcement learning)
+3. Advanced Techniques (e.g. GAN, Transfer Learning, Knowledge Graphs etc.)
 
 In 2019, I have a big plan to release my own well-designed products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Below is the list I envision:
 
