@@ -1,1 +1,1 @@
-My explorations in machine learning.
+My machine learning experiments.

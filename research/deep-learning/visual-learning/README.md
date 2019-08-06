@@ -1,1 +1,1 @@
-My explorations of visual learning.
+My visual learning explorations.

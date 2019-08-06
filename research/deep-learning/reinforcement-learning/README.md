@@ -1,1 +1,1 @@
-My explorations of reinforcement learning.
+My reinforcement learning explorations.

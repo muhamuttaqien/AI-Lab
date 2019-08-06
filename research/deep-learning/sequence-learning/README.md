@@ -1,1 +1,1 @@
-My explorations of sequence learning.
+My sequence learning explorations.
