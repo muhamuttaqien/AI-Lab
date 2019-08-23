@@ -28,8 +28,8 @@ In 2019, I have a big plan to release my own well-designed products based on Com
 5. Chat-bot System
 ```
 
-```text
 ## CV + NLP Products
+```text
 1. Optical Character Recognition
 2. Image Captioning
 3. Dense Captioning
