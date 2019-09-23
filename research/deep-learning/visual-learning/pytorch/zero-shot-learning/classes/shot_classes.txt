@@ -1,5 +1,0 @@
-car
-food
-hand
-man
-neck
