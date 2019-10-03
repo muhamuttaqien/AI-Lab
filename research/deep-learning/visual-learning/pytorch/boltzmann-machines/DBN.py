@@ -58,6 +58,7 @@ class DBNNet(nn.Module):
             
         return h_prob, h
     
+    # there is suspiciously a bug in this DBN architecture
     def reconstruct(self, x):
         
         h = x
