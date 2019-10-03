@@ -58,7 +58,6 @@ class DBNNet(nn.Module):
             
         return h_prob, h
     
-    # there is suspiciously a bug in this DBN architecture
     def reconstruct(self, x):
         
         h = x
@@ -90,6 +89,7 @@ class DBNNet(nn.Module):
             self.rbm_layers[i].train(data_loader, n_epochs, batch_size)
             v = temp.view((temp.shape[0], -1)).type(torch.FloatTensor)
             v_prob, v = self.rbm_layers[i].forward(v)
+            temp = v
         
         return
     
