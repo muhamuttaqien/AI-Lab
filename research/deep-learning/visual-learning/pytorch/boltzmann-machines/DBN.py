@@ -61,6 +61,7 @@ class DBNNet(nn.Module):
     def reconstruct(self, x):
         
         h = x
+        h_prob = 0
         for i in range(len(self.rbm_layers)):
             h = h.view((h.shape[0], -1)).type(torch.FloatTensor)
             h_prob, h = self.rbm_layers[i].visible_to_hidden(h) # reverse operation
