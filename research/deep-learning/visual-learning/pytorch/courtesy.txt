@@ -2,10 +2,10 @@
 
 - Capsule Network
 - Style Transfer
-- GAN
-- AutoEncoder
-- Zero-One-Few-Shot Learning
-- Boltzmann Machines & DBN
+- GAN (Vanilla, DCGAN, CycleGAN)
+- AutoEncoder (Vanilla, Denoising, Variational)
+- N-Shot Learning (Zero, One)
+- Boltzmann Machines (Vanilla, Restricted, DBN)
 - Graph Convolutional Networks
 
 *Boltzmann Machines*
