@@ -1,0 +1,69 @@
+# ----------
+# BASIC NLP
+# ----------
+https://www.analyticsvidhya.com/blog/2017/01/ultimate-guide-to-understand-implement-natural-language-processing-codes-in-python/
+https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/
+https://machinelearningmastery.com/what-are-word-embeddings/
+https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
+https://medium.com/@ageitgey/machine-learning-is-fun-part-5-language-translation-with-deep-learning-and-the-magic-of-sequences-2ace0acca0aa
+https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
+
+# ----
+# RNN
+# ----
+https://medium.com/@ageitgey/machine-learning-is-fun-part-2-a26a10b68df3
+https://www.analyticsvidhya.com/blog/2017/12/introduction-to-recurrent-neural-networks/
+https://medium.com/explore-artificial-intelligence/an-introduction-to-recurrent-neural-networks-72c97bf0912
+https://medium.com/mindorks/understanding-the-recurrent-neural-network-44d593f112a2
+https://blog.floydhub.com/a-beginners-guide-on-recurrent-neural-networks-with-pytorch/
+
+# ------
+# LSTM
+# ------
+https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714
+https://www.analyticsvidhya.com/blog/2017/12/fundamentals-of-deep-learning-introduction-to-lstm/
+https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+https://medium.com/datathings/the-magic-of-lstm-neural-networks-6775e8b540cd
+https://blog.floydhub.com/long-short-term-memory-from-zero-to-hero-with-pytorch/
+
+# -----
+# GRU
+# -----
+https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be
+https://blog.floydhub.com/gru-with-pytorch/
+
+# -------------
+# TRANSFORMERS
+# -------------
+https://towardsdatascience.com/transformers-141e32e69591
+https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
+https://towardsdatascience.com/how-to-code-the-transformer-in-pytorch-24db27c8f9ec
+https://www.analyticsvidhya.com/blog/2019/07/pytorch-transformers-nlp-python/
+
+# -----------------------
+# SC: Text Summarization
+# -----------------------
+https://towardsdatascience.com/a-quick-introduction-to-text-summarization-in-machine-learning-3d27ccf18a9f
+https://towardsdatascience.com/text-summarization-using-deep-learning-6e379ed2e89c
+https://becominghuman.ai/text-summarization-in-5-steps-using-nltk-65b21e352b65
+https://www.analyticsvidhya.com/blog/2019/06/comprehensive-guide-text-summarization-using-deep-learning-python/
+https://blog.floydhub.com/gentle-introduction-to-text-summarization-in-machine-learning/
+
+# ------------------------------
+# SC: Visual Question Answering
+# ------------------------------
+https://tryolabs.com/blog/2018/03/01/introduction-to-visual-question-answering/
+https://towardsdatascience.com/deep-learning-and-visual-question-answering-c8c8093941bc
+https://blog.floydhub.com/asking-questions-to-images-with-deep-learning/
+https://github.com/tbmoon/basic_vqa
+https://github.com/Cadene/vqa.pytorch
+
+# ---------------------
+# SC: Image Captioning
+# ---------------------
+https://towardsdatascience.com/image-captioning-with-keras-teaching-computers-to-describe-pictures-c88a46a311b8
+https://medium.com/analytics-vidhya/introduction-to-image-caption-generation-using-the-avengers-infinity-war-characters-6f14df09dbe5
+https://medium.com/mlreview/multi-modal-methods-image-captioning-from-translation-to-attention-895b6444256e
+https://www.analyticsvidhya.com/blog/2018/04/solving-an-image-captioning-task-using-deep-learning/
+https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
