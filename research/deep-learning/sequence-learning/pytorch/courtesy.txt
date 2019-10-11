@@ -1,10 +1,16 @@
 # ----------
 # BASIC NLP
 # ----------
+— NLP Pipeline
 https://www.analyticsvidhya.com/blog/2017/01/ultimate-guide-to-understand-implement-natural-language-processing-codes-in-python/
+
+— Word Embeddings
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/
+https://medium.com/explore-artificial-intelligence/word2vec-a-baby-step-in-deep-learning-but-a-giant-leap-towards-natural-language-processing-40fe4e8602ba
 https://machinelearningmastery.com/what-are-word-embeddings/
 https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
+
+— NLP Implementation
 https://medium.com/@ageitgey/machine-learning-is-fun-part-5-language-translation-with-deep-learning-and-the-magic-of-sequences-2ace0acca0aa
 https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
 
@@ -14,14 +20,14 @@ https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
 https://medium.com/@ageitgey/machine-learning-is-fun-part-2-a26a10b68df3
 https://www.analyticsvidhya.com/blog/2017/12/introduction-to-recurrent-neural-networks/
 https://medium.com/explore-artificial-intelligence/an-introduction-to-recurrent-neural-networks-72c97bf0912
-https://medium.com/mindorks/understanding-the-recurrent-neural-network-44d593f112a2
 https://blog.floydhub.com/a-beginners-guide-on-recurrent-neural-networks-with-pytorch/
 
 # ------
 # LSTM
 # ------
-https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714
 https://www.analyticsvidhya.com/blog/2017/12/fundamentals-of-deep-learning-introduction-to-lstm/
+https://medium.com/explore-artificial-intelligence/lstm-networks-c300d3cb8ac4
+https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714
 https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 https://medium.com/datathings/the-magic-of-lstm-neural-networks-6775e8b540cd
 https://blog.floydhub.com/long-short-term-memory-from-zero-to-hero-with-pytorch/
