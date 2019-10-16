@@ -73,3 +73,48 @@ https://medium.com/analytics-vidhya/introduction-to-image-caption-generation-usi
 https://medium.com/mlreview/multi-modal-methods-image-captioning-from-translation-to-attention-895b6444256e
 https://www.analyticsvidhya.com/blog/2018/04/solving-an-image-captioning-task-using-deep-learning/
 https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
+
+
+
+# ------------------------------------------------------------
+# LESSON LEARNED                                             #
+# ------------------------------------------------------------
+
+NOTES OF SEQUENCE LEARNING:
+
+# ---------------------------------
+# RNNs (Recurrent Neural Networks)
+# ---------------------------------
+1. In RNNs, The prior ht is initialized by 0 values
+2. There is Whh with weights randomly initialized
+3. To implement RNNs, the technique can be one-to-one, one-to-many, many-to-one, many-to-many and many-to-many
+4. In RNNs, we may or may not have outputs at each time step
+5. RNNs output produced can also be fed back into the model at the next time step if necessary called looping mechanisms
+6. RNNs, theoretically, hidden state is init for each time step but in practice it can be done for every batch or epoch and it worked
+7. RNNs typically treat the full sequence (word) as one training example so the total error is just the sum of the errors at each time step (chars)
+8. All of the weights are actually the same as that RNNs cell is essentially being reused throughout the process and only the input data and hidden state carried forward are unique at each time step
+9. RNNs gradient is calculated for each time step with respect to the weight parameter and then combine the gradients of the error for all time steps (If there are 100s of time steps, this would basically take really long for the network to converge suffering vanishing gradients and the values are almost zero)
+10. RNNs are forgetful so they cannot handle long dependency like ‘The man who ate my pizza has purple hair’ sentence
+11. RNNs formula for generating hidden state is Ht = tanH(Whh*Ht-1 + Wxh*X)
+12. RNNs hidden state init in batch shape respects to input’s batch shape
+13. RNNs input size and output size is as same as dictionary/ vocabulary size of the tasks
+14. In practice we can use until 300 memory cells/ units and more than 1 RNNs layer
+
+# -------------------------------
+# LSTMs (Long Short-Term Memory)
+# -------------------------------
+1. For the simple short-term-memory sentence like ‘The color of the sky is ___‘, RNNs turn out to be quite effective
+2. The limitation of RNNs is they transforms the existing information completely and there is no consideration for ‘important’ and ‘not so important’ information
+3. LSTMs network is comprised of different memory blocks called cells 
+4. LSTMs’ cell state contains long-term memory and hidden state contains short-term memory and 3 major gating mechanisms (forget, input, output)
+5. Forget gate is responsible for forget long-term memory/not, long-term memory carried by cell state will be considered whether to remember/ keep or forget/ remove the information from the cell sate | sigmoid( Wforget . ( ht-1, xt ) + Bforget)
+6. In forget gate, sentence example is ‘Bob is a nice person. Dan on the other hand is evil’ while the gate forgets the subject ‘Bob’ and replaces it with the new subject ‘Dan’
+7. Input gate is responsible for adjust long-term memory/not | long-term memory carried by cell state will be considered whether to adjust or not based on vector created from the tanH | sigmoid( Winput1 . (ht-1, xt) + Binput1 ) | tanH( Winput2 . (ht-1, xt) + Binput2)
+8. In input gate, sentence example is ‘Bob knows swimming. He told me over the phone that he had served the navy for 4 long years’ while the gate set ‘he told over the phone’ as less important information or might be redundant and can be ignored
+9. Output gate is responsible for select useful information from long-term memory/ not since not all information that runs along the cell state is fit for being output/ prediction | sigmoid( Woutput1 . (ht-1, xt) + Boutput1 ) | tanH( Woutput2 . Cellt + Boutput2 ) | sigmoid_vector * tanH_vector 
+10. In output gate, sentence example is ‘Bob fought single handedly with the enemy and died for his country. For his contributions brave’ while the gate has a strong tendency of the answer being a noun and thus ‘Bob’ could be an output
+11. The one of disadvantage of LSTMs is the difficulty of training them meaning it takes a lot of time and system resources (hardware constraint)
+
+# ---------------------------
+# GRUs (Gater Recurrent Unit)
+# ---------------------------
