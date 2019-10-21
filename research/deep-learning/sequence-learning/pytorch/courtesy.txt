@@ -9,6 +9,9 @@ https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/
 https://machinelearningmastery.com/what-are-word-embeddings/
 https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
 https://medium.com/explore-artificial-intelligence/word2vec-a-baby-step-in-deep-learning-but-a-giant-leap-towards-natural-language-processing-40fe4e8602ba
+https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/
+https://towardsdatascience.com/elmo-contextual-language-embedding-335de2268604
+https://towardsdatascience.com/elmo-helps-to-further-improve-your-word-embeddings-c6ed2c9df95f
 
 — NLP Implementation
 https://medium.com/@ageitgey/machine-learning-is-fun-part-5-language-translation-with-deep-learning-and-the-magic-of-sequences-2ace0acca0aa
