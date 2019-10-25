@@ -49,23 +49,48 @@ https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-st
 https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be
 https://blog.floydhub.com/gru-with-pytorch/
 
+# --------
+# SEQ2SEQ
+# --------
+https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+https://towardsdatascience.com/attention-seq2seq-with-pytorch-learning-to-invert-a-sequence-34faf4133e53
+https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346
+https://towardsdatascience.com/natural-language-understanding-with-sequence-to-sequence-models-e87d41ad258b
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+https://machinelearningmastery.com/encoder-decoder-long-short-term-memory-networks/
+https://machinelearningmastery.com/encoder-decoder-attention-sequence-to-sequence-prediction-keras/
+
 # ----------
-# Attention
+# ATTENTION
 # ----------
-https://medium.com/@joealato/attention-in-nlp-734c6fa9d983
-https://medium.com/@Alibaba_Cloud/self-attention-mechanisms-in-natural-language-processing-9f28315ff905
 https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f
+https://machinelearningmastery.com/attention-long-short-term-memory-recurrent-neural-networks/
+https://machinelearningmastery.com/how-does-attention-work-in-encoder-decoder-recurrent-neural-networks/
+http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/
+https://towardsdatascience.com/practical-guide-to-attention-mechanism-for-nlu-tasks-ccc47be8d500
+https://medium.com/datalogue/attention-in-keras-1892773a4f22
 https://distill.pub/2016/augmented-rnns/
 
-# -------------
-# TRANSFORMERS
-# -------------
+# --------------------
+# TRANSFORMERS & BERT
+# --------------------
 https://towardsdatascience.com/transformers-141e32e69591
 https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
 https://towardsdatascience.com/how-to-code-the-transformer-in-pytorch-24db27c8f9ec
 https://www.analyticsvidhya.com/blog/2019/07/pytorch-transformers-nlp-python/
 https://blog.floydhub.com/the-transformer-in-pytorch/
 https://blog.floydhub.com/gpt2/
+http://jalammar.github.io/illustrated-bert/
+https://blog.floydhub.com/when-the-best-nlp-model-is-not-the-best-choice/
+
+# -----------------
+# KNOWLEDGE GRAPHS
+# -----------------
+https://towardsdatascience.com/sentiment-analysis-concept-analysis-and-applications-6c94d6f58c17
+https://www.analyticsvidhya.com/blog/2018/07/hands-on-sentiment-analysis-dataset-python/
+https://www.analyticsvidhya.com/blog/2017/01/sentiment-analysis-of-twitter-posts-on-chennai-floods-using-python/
+https://towardsdatascience.com/sentiment-analysis-using-rnns-lstm-60871fa6aeba
+https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
 
 # -----------------------
 # SC: Sentiment Analysis
@@ -102,6 +127,16 @@ https://towardsdatascience.com/deep-learning-and-visual-question-answering-c8c80
 https://blog.floydhub.com/asking-questions-to-images-with-deep-learning/
 https://github.com/tbmoon/basic_vqa
 https://github.com/Cadene/vqa.pytorch
+
+# ------------
+# SC: Chatbot
+# ------------
+https://chatbotslife.com/ultimate-guide-to-leveraging-nlp-machine-learning-for-you-chatbot-531ff2dd870c
+https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
+https://pytorch.org/tutorials/beginner/chatbot_tutorial.html
+https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e
+https://adeshpande3.github.io/How-I-Used-Deep-Learning-to-Train-a-Chatbot-to-Talk-Like-Me
+https://www.analyticsvidhya.com/blog/2018/01/faq-chatbots-the-future-of-information-searching/
 
 # -----------------------
 # SC: Speech Recognition
