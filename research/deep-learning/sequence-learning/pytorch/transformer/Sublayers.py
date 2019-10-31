@@ -37,19 +37,19 @@ def calculate_attention(q, k, v, d_k, mask=None, dropout=None):
 
 class MultiHeadSelfAttention(nn.Module):
     
-    def __init__(self, heads, d_model, dropout=0.1):
+    def __init__(self, heads, embedding_dim, dropout=0.1):
         super(MultiHeadSelfAttention, self).__init__()
         
-        self.d_model = d_model
-        self.d_k = embedding_dim // heads
+        self.d_model = embedding_dim
         self.heads = heads
+        self.d_k = self.d_model // self.heads
         
         self.q_linear = nn.Linear(self.d_model , self.d_model )
         self.k_linear = nn.Linear(self.d_model , self.d_model )
         self.v_linear = nn.Linear(self.d_model , self.d_model )
         
         self.dropout = nn.Dropout(dropout)
-        self.fc_layer = nn.Linear(embedding_dim, embedding_dim)
+        self.fc_layer = nn.Linear(self.d_model, self.d_model)
         
     def forward(self, q, k, v, mask=None):
         
