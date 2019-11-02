@@ -1,52 +1,44 @@
+import numpy as np
 import spacy
-import re
-from torchtext import data
+import torch
+from torch.autograd import Variable
 
-class Tokenizer(object):
+def show_plot_evaluation(points, n):
     
-    def __init__(self, lang):
-        self.nlp = spacy.load(lang)
-            
-    def tokenize(self, sentence):
-        sentence = re.sub(
-        r"[\*\"“”\n\\…\+\-\/\=\(\)‘•:\[\]\|’\!;]", " ", str(sentence))
-        sentence = re.sub(r"[ ]+", " ", sentence)
-        sentence = re.sub(r"\!+", "!", sentence)
-        sentence = re.sub(r"\,+", ",", sentence)
-        sentence = re.sub(r"\?+", "?", sentence)
-        sentence = sentence.lower()
-        return [tok.text for tok in self.nlp.tokenizer(sentence) if tok.text != " "]
+    points = moving_average(points, n)
     
-global max_source_in_batch, max_target_in_batch
+    plt.figure(figsize=(10, 6))
+    plt.plot(points)
+    plt.savefig('./images/plot_evaluation_of_network.png')
+    plt.show()
+    
+def create_no_peak_mask(size, device):
+    
+    no_peak_mask = np.triu(np.ones((1, size, size)), k=1).astype('uint8')
+    no_peak_mask = Variable(torch.from_numpy(no_peak_mask) == 0)
+    if device == 0:
+        no_peak_mask = no_peak_mask.cuda()
+    
+    return no_peak_mask
 
-def batch_size_fn(new, count, sofar):
+# the purposes of these masks are:
+# in the encoder and decoder is to zero attention outputs wherever there is just padding in the input sentences
+# in the decoder is to prevent the decoder 'peaking' ahead at the rest of the translated sentence when predicting the next word
+
+def create_masks(source, target, source_pad, target_pad, device):
     
-    # keep augmenting batch and calculate total number of tokens + padding
-    global max_source_in_batch, max_target_in_batch
-    if count == 1:
-        max_source_in_batch = 0
-        max_target_in_batch = 0
-        
-    max_source_in_batch = max(max_source_in_batch, len(new.SOURCE))
-    max_target_in_batch = max(max_target_in_batch, len(new.TARGET) + 2)
+    source_mask = (source != source_pad).unsqueeze(-2)
     
-    source_elements = count * max_source_in_batch
-    target_elements = count * max_target_in_batch
+    if target is not None:
+        target_mask = (target != target_pad).unsqueeze(-2)
+        size = target.size(1) # get seq_len for matrix
+        no_peak_mask = create_no_peak_mask(size, device)
+        if target.is_cuda:
+            no_peak_mask.cuda()
+        target_mask = target_mask & no_peak_mask
     
-    return max(source_elements, target_elements)
+    else:
+        target_mask = None
     
-class Iterator(data.Iterator):
+    return source_mask, target_mask
     
-    def create_batches(self):
-        if self.train:
-            def pool(d, random_shuffler):
-                for p in data.batch(d, self.batch_size * 100):
-                    p_batch = data.batch(sorted(p, key=self.sort_key), self.batch_size, self.batch_size_fn)
-                    for b in random_shuffler(list(p_batch)):
-                        yield b
-                        
-            self.batches = pool(self.data(), self.random_shuffler)
-        else:
-            self.batches = []
-            for b in data.batch(self.data(), self.batch_size, self.batch_size_fn):
-                self.batches.append(sorted(b, key=self.sort_key))
