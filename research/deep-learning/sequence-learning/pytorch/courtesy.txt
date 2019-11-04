@@ -18,12 +18,15 @@ http://jalammar.github.io/illustrated-word2vec/
 https://medium.com/@ageitgey/machine-learning-is-fun-part-5-language-translation-with-deep-learning-and-the-magic-of-sequences-2ace0acca0aa
 https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
 
-— Knowledge Graphs
-https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
-http://www.seobythesea.com/2018/10/how-googles-knowledge-graph-updates-itself-by-answering-questions/
+# ----------------
+# Knowledge Graph
+# ----------------
 https://geomarketing.com/geo-101-what-is-the-knowledge-graph
+http://www.seobythesea.com/2018/10/how-googles-knowledge-graph-updates-itself-by-answering-questions/
+https://www.analyticsvidhya.com/blog/2019/09/introduction-information-extraction-python-spacy/?utm_source=blog&utm_medium=how-to-build-knowledge-graph-text-using-spacy
+https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
 https://towardsdatascience.com/graph-databases-whats-the-big-deal-ec310b1bc0ed
-https://towardsdatascience.com/extracting-knowledge-from-knowledge-graphs-e5521e4861a0
+https://towardsdatascience.com/extracting-knowledge-from-knowledge-graphs-e5521e4861a0 (edited) 
 
 # ----
 # RNN
@@ -99,15 +102,6 @@ http://jalammar.github.io/illustrated-bert/
 http://jalammar.github.io/illustrated-gpt2/
 https://blog.floydhub.com/gpt2/
 https://blog.floydhub.com/when-the-best-nlp-model-is-not-the-best-choice/
-
-# -----------------
-# KNOWLEDGE GRAPHS
-# -----------------
-https://towardsdatascience.com/sentiment-analysis-concept-analysis-and-applications-6c94d6f58c17
-https://www.analyticsvidhya.com/blog/2018/07/hands-on-sentiment-analysis-dataset-python/
-https://www.analyticsvidhya.com/blog/2017/01/sentiment-analysis-of-twitter-posts-on-chennai-floods-using-python/
-https://towardsdatascience.com/sentiment-analysis-using-rnns-lstm-60871fa6aeba
-https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
 
 # -----------------------
 # SC: Sentiment Analysis
