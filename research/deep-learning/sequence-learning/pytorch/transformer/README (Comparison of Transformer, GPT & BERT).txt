@@ -1,7 +1,7 @@
 Transformer-Based Models: Transformer-XL, GPT, BERT, GPT-2, XLNet
 
 Transformer-XL
-- Larger input length to save context input
+- Larger input length to avoid context fragmentation issue on input sequence
 
 GPT 1
 - Fine-tuned tasks
