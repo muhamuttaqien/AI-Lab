@@ -1,6 +1,7 @@
 import math
 import torch
-import torch.nn as nn 
+import torch.nn as nn
+from torch.autograd import Variable
 
 class PositionalEncoder(nn.Module):
     
@@ -36,3 +37,4 @@ class PositionalEncoder(nn.Module):
         x = self.dropout(x)
         
         return x
+    

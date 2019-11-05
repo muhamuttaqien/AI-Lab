@@ -12,3 +12,4 @@ class Embedder(nn.Module):
     def forward(self, x):
         x = self.embedding_layer(x)
         return x
+    

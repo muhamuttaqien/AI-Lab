@@ -1,3 +1,5 @@
+import math
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -44,9 +46,9 @@ class MultiHeadSelfAttention(nn.Module):
         self.heads = heads
         self.d_k = self.d_model // self.heads
         
-        self.q_linear = nn.Linear(self.d_model , self.d_model )
-        self.k_linear = nn.Linear(self.d_model , self.d_model )
-        self.v_linear = nn.Linear(self.d_model , self.d_model )
+        self.q_linear = nn.Linear(self.d_model, self.d_model)
+        self.k_linear = nn.Linear(self.d_model, self.d_model)
+        self.v_linear = nn.Linear(self.d_model, self.d_model)
         
         self.dropout = nn.Dropout(dropout)
         self.fc_layer = nn.Linear(self.d_model, self.d_model)
