@@ -38,7 +38,7 @@ class CosineWithRestarts(torch.optim.lr_scheduler._LRScheduler):
                         np.pi * 
                         ((self._cycle_counter) % self._updated_cycle_len) /
                         self._updated_cycle_len
-                    )
+                    ) + 1
                 )
             ) for lr in self.base_lrs
         ]
