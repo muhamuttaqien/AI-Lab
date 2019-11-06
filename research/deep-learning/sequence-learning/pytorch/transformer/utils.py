@@ -156,7 +156,9 @@ def show_plot_evaluation(points, n):
     if not os.path.exists('./images/'): os.makedirs('./images/')
     plt.savefig('./images/plot_evaluation_of_network.png')
     plt.show()
-    
+
+# to prevent the first output predictions from being able to see by model
+# when the mask is applied in our attention function, each prediction will only be able to make use of the sentence up until the word it is predicting
 def create_no_peak_mask(size, device):
     
     no_peak_mask = np.triu(np.ones((1, size, size)), k=1).astype('uint8')
@@ -169,7 +171,6 @@ def create_no_peak_mask(size, device):
 # the purposes of these masks are:
 # in the encoder and decoder is to zero attention outputs wherever there is just padding in the input sentences
 # in the decoder is to prevent the decoder 'peaking' ahead at the rest of the translated sentence when predicting the next word
-
 def create_masks(source, target, source_pad, target_pad, device):
     
     source_mask = (source != source_pad).unsqueeze(-2)
@@ -177,7 +178,9 @@ def create_masks(source, target, source_pad, target_pad, device):
     if target is not None:
         target_mask = (target != target_pad).unsqueeze(-2)
         size = target.size(1) # get seq_len for matrix
+        
         no_peak_mask = create_no_peak_mask(size, device)
+        
         if target.is_cuda:
             target_mask = target_mask.cuda()
             no_peak_mask = no_peak_mask.cuda()
