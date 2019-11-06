@@ -25,6 +25,7 @@ class Norm(nn.Module):
     
 def calculate_attention(q, k, v, d_k, mask=None, dropout=None):
     
+    # here will perform dot product of the q vector with the k vector of the respective word the network is scoring
     scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(d_k)
     
     # before we perform Softmax, we apply our mask and hence reduce values where the input is padding (so does the decoder)
@@ -51,6 +52,7 @@ class MultiHeadSelfAttention(nn.Module):
         self.heads = heads
         self.d_k = self.d_model // self.heads
         
+        # this will be three matrices (Wq, Wk and Wv) trained during the training process
         self.q_linear = nn.Linear(self.d_model, self.d_model)
         self.k_linear = nn.Linear(self.d_model, self.d_model)
         self.v_linear = nn.Linear(self.d_model, self.d_model)
@@ -62,7 +64,7 @@ class MultiHeadSelfAttention(nn.Module):
         
         batch_size = q.size(0)
         
-        # perform linear operation and split into N heads
+        # create a Query vector, a Key vector, and a Value vector by performing linear operation and split into N heads
         q = self.q_linear(q).view(batch_size, -1, self.heads, self.d_k)
         k = self.k_linear(k).view(batch_size, -1, self.heads, self.d_k)
         v = self.v_linear(v).view(batch_size, -1, self.heads, self.d_k)
