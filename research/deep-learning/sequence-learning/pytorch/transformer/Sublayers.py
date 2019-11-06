@@ -58,7 +58,9 @@ class MultiHeadSelfAttention(nn.Module):
         self.v_linear = nn.Linear(self.d_model, self.d_model)
         
         self.dropout = nn.Dropout(dropout)
-        self.fc_layer = nn.Linear(self.d_model, self.d_model)
+        
+        # additional weights matrix (WO) trained jointly with the network
+        self.concatenate_layer = nn.Linear(self.d_model, self.d_model)
         
     def forward(self, q, k, v, mask=None):
         
@@ -74,12 +76,12 @@ class MultiHeadSelfAttention(nn.Module):
         k = k.transpose(1,2)
         v = v.transpose(1,2)
         
-        # calculate attention score
-        scores = calculate_attention(q, k, v, self.d_k, mask, self.dropout)
+        # calculate attention scores
+        z_scores = calculate_attention(q, k, v, self.d_k, mask, self.dropout)
         
         # concatenate heads and put through final linear layer
-        concat = scores.transpose(1,2).contiguous().view(batch_size, -1, self.d_model)
-        output = self.fc_layer(concat)
+        z_scores = z_scores.transpose(1,2).contiguous().view(batch_size, -1, self.d_model)
+        output = self.concatenate_layer(z_scores)
         
         return output
 

@@ -20,7 +20,7 @@ def init_vars(sentence, model, source_field, target_field, k, max_length, device
     outputs.to(device)
     
     target_mask = create_no_peak_mask(1, device)
-    output = model.fc_layer(model.decoder(outputs, e_output, source_mask, target_mask))
+    output = model.output_layer(model.decoder(outputs, e_output, source_mask, target_mask))
     output = F.softmax(output, dim=-1)
     
     probs, index = output[:, -1].data.topk(k)
@@ -67,7 +67,7 @@ def beam_search(sentence, model, source_field, target_field, max_length, device)
     for i in range(2, max_length):
         
         target_mask = create_no_peak_mask(i, device)
-        output = model.fc_layer(model.decoder(outputs[:,:i], e_outputs, source_mask, target_mask))
+        output = model.output_layer(model.decoder(outputs[:,:i], e_outputs, source_mask, target_mask))
         output = F.softmax(output, dim=-1)
         
         outputs, log_scores = k_best_outputs(outputs, output, log_scores, i, K)
