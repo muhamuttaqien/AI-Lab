@@ -12,7 +12,7 @@ class EncoderLayer(nn.Module):
         self.norm = Norm(d_model)
         self.dropout = nn.Dropout(dropout)
         self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
-        self.ff_layer = FeedForward(d_model, dropout=dropout)
+        self.ffnn_layer = FeedForward(d_model, dropout=dropout)
     
     def forward(self, x, mask, device):
         
@@ -20,9 +20,9 @@ class EncoderLayer(nn.Module):
         mask = mask.to(device)
         
         x = self.norm(x)
-        x = x + self.dropout(self.attention_layer(x, x, x, mask))
+        x = x + self.dropout(self.attention_layer(x, x, x, mask)) # perform residual connection then followed by normalization
         x = self.norm(x)
-        x = x + self.dropout(self.ff_layer(x))
+        x = x + self.dropout(self.ffnn_layer(x))
         
         return x
     
@@ -36,7 +36,7 @@ class DecoderLayer(nn.Module):
         
         self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
         self.encoder_decoder_attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
-        self.ff_layer = FeedForward(d_model, dropout=dropout)
+        self.ffnn_layer = FeedForward(d_model, dropout=dropout)
         
     def forward(self, x, encoder_outputs, source_mask, target_mask, device):
         
@@ -46,12 +46,12 @@ class DecoderLayer(nn.Module):
         target_mask = target_mask.to(device)
         
         x = self.norm(x)
-        x = x + self.dropout(self.attention_layer(x, x, x, target_mask))
+        x = x + self.dropout(self.attention_layer(x, x, x, target_mask)) # perform residual connection
         
         x = self.norm(x)
         x = x + self.dropout(self.encoder_decoder_attention_layer(x, encoder_outputs, encoder_outputs, source_mask))
         
         x = self.norm(x)
-        x = x + self.dropout(self.ff_layer(x))
+        x = x + self.dropout(self.ffnn_layer(x))
         return x
     
