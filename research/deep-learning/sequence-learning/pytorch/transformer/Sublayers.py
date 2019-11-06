@@ -4,6 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+# batch normalization prevents the range of values in the layers changing too much
+# this will support the model to train faster and has better ability to generalize
 class Norm(nn.Module):
     
     def __init__(self, d_model, eps=1e-6):
@@ -18,13 +20,14 @@ class Norm(nn.Module):
         
     def forward(self, x):
         norm = self.alpha * (x - x.mean(dim=-1, keepdim=True)) \
-               / (x.std(dim=-1, keepdim=True) + self.eps) + self.bias
+                          / (x.std(dim=-1, keepdim=True) + self.eps) + self.bias
         return norm
     
 def calculate_attention(q, k, v, d_k, mask=None, dropout=None):
     
     scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(d_k)
     
+    # before we perform Softmax, we apply our mask and hence reduce values where the input is padding (so does the decoder)
     if mask is not None:
         mask = mask.unsqueeze(1)
         scores = scores.masked_fill(mask == 0, -1e9)
@@ -37,6 +40,8 @@ def calculate_attention(q, k, v, d_k, mask=None, dropout=None):
     output = torch.matmul(scores, v)
     return output
 
+# Multi-headed attention layer, each input is split into multiple heads 
+# this allows the network to simultaneously attend to different subsections of each embedding
 class MultiHeadSelfAttention(nn.Module):
     
     def __init__(self, heads, embedding_dim, dropout=0.1):
@@ -75,7 +80,9 @@ class MultiHeadSelfAttention(nn.Module):
         output = self.fc_layer(concat)
         
         return output
-    
+
+# the feed-forward layer simply deepens our network 
+# this will employ linear layers to analyze patterns in the attention layers output
 class FeedForward(nn.Module):
     
     def __init__(self, d_model, d_ff=2048, dropout=0.1):
