@@ -34,8 +34,8 @@ class DecoderLayer(nn.Module):
         self.norm = Norm(d_model)
         self.dropout = nn.Dropout(dropout)
         
-        self.attention1_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
-        self.attention2_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
+        self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
+        self.encoder_decoder_attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
         self.ff_layer = FeedForward(d_model, dropout=dropout)
         
     def forward(self, x, encoder_outputs, source_mask, target_mask, device):
@@ -46,10 +46,10 @@ class DecoderLayer(nn.Module):
         target_mask = target_mask.to(device)
         
         x = self.norm(x)
-        x = x + self.dropout(self.attention1_layer(x, x, x, target_mask))
+        x = x + self.dropout(self.attention_layer(x, x, x, target_mask))
         
         x = self.norm(x)
-        x = x + self.dropout(self.attention2_layer(x, encoder_outputs, encoder_outputs, source_mask))
+        x = x + self.dropout(self.encoder_decoder_attention_layer(x, encoder_outputs, encoder_outputs, source_mask))
         
         x = self.norm(x)
         x = x + self.dropout(self.ff_layer(x))

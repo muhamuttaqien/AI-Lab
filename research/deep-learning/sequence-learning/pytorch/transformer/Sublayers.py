@@ -83,6 +83,7 @@ class MultiHeadSelfAttention(nn.Module):
 
 # the feed-forward layer simply deepens our network 
 # this will employ linear layers to analyze patterns in the attention layers output
+# the various paths can be executed in parallel while flowing through the feed-forward layer (no dependencies)
 class FeedForward(nn.Module):
     
     def __init__(self, d_model, d_ff=2048, dropout=0.1):
