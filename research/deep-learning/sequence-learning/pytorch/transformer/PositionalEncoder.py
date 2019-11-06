@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
+# this will tells the network about the word’s position
 class PositionalEncoder(nn.Module):
     
     def __init__(self, d_model, max_seq_len=200, dropout=0.1):
@@ -13,7 +14,7 @@ class PositionalEncoder(nn.Module):
         
         # create a 2-d constant matrix of position-specific values
         # Pos refers to the order in the sentence
-        # i refers to the position along the embedding vector dimension
+        # while i refers to the position along the embedding vector dimension
         pe = torch.zeros(max_seq_len, d_model)
         for pos in range(max_seq_len):
             for i in range(0, d_model, 2):
