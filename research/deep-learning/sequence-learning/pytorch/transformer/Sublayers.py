@@ -43,10 +43,10 @@ def calculate_attention(q, k, v, d_k, mask=None, dropout=None):
 
 # Multi-headed attention layer, each input is split into multiple heads 
 # this allows the network to simultaneously attend to different subsections of each embedding
-class MultiHeadSelfAttention(nn.Module):
+class MultiHeadedSelfAttention(nn.Module):
     
     def __init__(self, heads, embedding_dim, dropout=0.1):
-        super(MultiHeadSelfAttention, self).__init__()
+        super(MultiHeadedSelfAttention, self).__init__()
         
         self.d_model = embedding_dim
         self.heads = heads
