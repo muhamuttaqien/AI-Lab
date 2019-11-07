@@ -38,4 +38,6 @@ Transformer-Based Models: Transformer-XL, GPT, BERT, GPT-2, XLNet
 - GPT 1
 - Very good at writing essays
 - Masked self-attention + Mask Interfering mechanism
-- 1.5 billion parameters Trained by Web Text 40GB + 100 GPU
+- 1.5 billion parameters Trained by WebText 40GB OpenAI researchers crawled from the internet as part of the research effort
+- Also trained using + 100 GPU
+- GPT-2 SMALL consists of 117M parameters while GPT-2 EXTRA LARGE consists of 1,5B parameters
