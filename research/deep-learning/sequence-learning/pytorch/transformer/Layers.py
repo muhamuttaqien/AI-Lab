@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from Sublayers import Norm, MultiHeadSelfAttention, FeedForward
+from Sublayers import Norm, MultiHeadedSelfAttention, FeedForward
 
 class EncoderLayer(nn.Module):
     
@@ -11,7 +11,7 @@ class EncoderLayer(nn.Module):
         
         self.norm = Norm(d_model)
         self.dropout = nn.Dropout(dropout)
-        self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
+        self.attention_layer = MultiHeadedSelfAttention(heads, d_model, dropout=dropout)
         self.ffnn_layer = FeedForward(d_model, dropout=dropout)
     
     def forward(self, x, mask, device):
@@ -34,8 +34,8 @@ class DecoderLayer(nn.Module):
         self.norm = Norm(d_model)
         self.dropout = nn.Dropout(dropout)
         
-        self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
-        self.encoder_decoder_attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
+        self.attention_layer = MultiHeadedSelfAttention(heads, d_model, dropout=dropout)
+        self.encoder_decoder_attention_layer = MultiHeadedSelfAttention(heads, d_model, dropout=dropout)
         self.ffnn_layer = FeedForward(d_model, dropout=dropout)
         
     def forward(self, x, encoder_outputs, source_mask, target_mask, device):
