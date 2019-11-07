@@ -41,6 +41,8 @@ Transformer-Based Models: Transformer-XL, GPT, BERT, GPT-2, XLNet
 - 1.5 billion parameters Trained by WebText 40GB OpenAI researchers crawled from the internet as part of the research effort
 - Also trained using + 100 GPU
 - GPT-2 SMALL consists of 117M parameters while GPT-2 EXTRA LARGE consists of 1,5B parameters
+- In training mode, the network will process multiple tokens at once with batch size 512 while in evaluation mode the network will process only one token at once with only 1 batch size
+- an encoder is not required to conduct translation
 
 # ------
 # XLNET
