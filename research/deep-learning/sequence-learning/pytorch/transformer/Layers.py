@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from Sublayers import Norm, MultiHeadSelfAttention, FeedForward
+from Sublayers import Norm, MultiHeadedSelfAttention, FeedForward
 
 class EncoderLayer(nn.Module):
     
@@ -11,7 +11,7 @@ class EncoderLayer(nn.Module):
         
         self.norm = Norm(d_model)
         self.dropout = nn.Dropout(dropout)
-        self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
+        self.attention_layer = MultiHeadedSelfAttention(heads, d_model, dropout=dropout)
         self.ffnn_layer = FeedForward(d_model, dropout=dropout)
     
     def forward(self, x, mask, device):
@@ -34,8 +34,10 @@ class DecoderLayer(nn.Module):
         self.norm = Norm(d_model)
         self.dropout = nn.Dropout(dropout)
         
-        self.attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
-        self.encoder_decoder_attention_layer = MultiHeadSelfAttention(heads, d_model, dropout=dropout)
+        # in the decoder, the self-attention layer is only allowed to attend to earlier positions in the output sequence
+        # this is different than the encoder counterparts
+        self.attention_layer = MultiHeadedSelfAttention(heads, d_model, dropout=dropout)
+        self.encoder_decoder_attention_layer = MultiHeadedSelfAttention(heads, d_model, dropout=dropout)
         self.ffnn_layer = FeedForward(d_model, dropout=dropout)
         
     def forward(self, x, encoder_outputs, source_mask, target_mask, device):
@@ -49,6 +51,8 @@ class DecoderLayer(nn.Module):
         x = x + self.dropout(self.attention_layer(x, x, x, target_mask)) # perform residual connection
         
         x = self.norm(x)
+        # the output of the top encoder is treated as k and v vectors in decoder side
+        # this help decoder focus on appropriate places in the input sequence
         x = x + self.dropout(self.encoder_decoder_attention_layer(x, encoder_outputs, encoder_outputs, source_mask))
         
         x = self.norm(x)
