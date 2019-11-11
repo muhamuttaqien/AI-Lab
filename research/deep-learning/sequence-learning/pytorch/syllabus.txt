@@ -1,3 +1,14 @@
+TOPICS OF Sequence Learning
+
+1. Word Embeddings
+2. Knowledge Graph
+3. RNN, LSTM, GRU
+4. RNN-CNN
+5. SEQ2SEQ
+6. Attention
+7. ULMfit
+8. Transformers, GPT & BERT
+
 # ----------
 # BASIC NLP
 # ----------
@@ -37,12 +48,6 @@ https://medium.com/explore-artificial-intelligence/an-introduction-to-recurrent-
 https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9
 https://blog.floydhub.com/a-beginners-guide-on-recurrent-neural-networks-with-pytorch/
 
-# --------
-# RNN-CNN
-# --------
-https://towardsdatascience.com/how-to-build-a-gated-convolutional-neural-network-gcnn-for-natural-language-processing-nlp-5ba3ee730bfb
-http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/
-
 # ------
 # LSTM
 # ------
@@ -58,6 +63,12 @@ https://blog.floydhub.com/long-short-term-memory-from-zero-to-hero-with-pytorch/
 https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
 https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be
 https://blog.floydhub.com/gru-with-pytorch/
+
+# --------
+# RNN-CNN
+# --------
+https://towardsdatascience.com/how-to-build-a-gated-convolutional-neural-network-gcnn-for-natural-language-processing-nlp-5ba3ee730bfb
+http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/
 
 # --------
 # SEQ2SEQ
