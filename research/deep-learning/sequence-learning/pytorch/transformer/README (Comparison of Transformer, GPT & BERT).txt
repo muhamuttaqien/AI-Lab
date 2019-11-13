@@ -49,3 +49,6 @@ Transformer-Based Models: Transformer-XL, GPT, BERT, GPT-2, XLNet
 # ------
 - XLNet brings back autoregression while finding an alternative way to incorporate the context on both sides (bidirectional)
 
+# --------------
+# Baidu's ERNIE
+# --------------
