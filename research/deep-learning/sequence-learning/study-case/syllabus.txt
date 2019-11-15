@@ -1,11 +1,12 @@
 # -----------------------
 # SC: Sentiment Analysis
 # -----------------------
-https://towardsdatascience.com/sentiment-analysis-concept-analysis-and-applications-6c94d6f58c17
-https://www.analyticsvidhya.com/blog/2018/07/hands-on-sentiment-analysis-dataset-python/
-https://www.analyticsvidhya.com/blog/2017/01/sentiment-analysis-of-twitter-posts-on-chennai-floods-using-python/
-https://towardsdatascience.com/sentiment-analysis-using-rnns-lstm-60871fa6aeba
-https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
+https://monkeylearn.com/sentiment-analysis/
+https://monkeylearn.com/sentiment-analysis-examples/
+https://medium.com/neuronio/from-sentiment-analysis-to-emotion-recognition-a-nlp-story-bcc9d6ff61ae
+https://towardsdatascience.com/real-time-sentiment-analysis-on-social-media-with-open-source-tools-f864ca239afe
+HANDS-ON: https://www.analyticsvidhya.com/blog/2018/07/hands-on-sentiment-analysis-dataset-python/
+HANDS-ON: https://medium.com/@bhadreshpsavani/tutorial-on-sentimental-analysis-using-pytorch-b1431306a2d7
 
 # -----------------------
 # SC: Text Summarization
