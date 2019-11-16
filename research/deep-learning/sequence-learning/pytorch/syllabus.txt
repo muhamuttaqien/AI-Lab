@@ -33,8 +33,9 @@ https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
 # Knowledge Graph
 # ----------------
 https://geomarketing.com/geo-101-what-is-the-knowledge-graph
+https://www.analyticsvidhya.com/blog/2018/09/introduction-graph-theory-applications-python/
 http://www.seobythesea.com/2018/10/how-googles-knowledge-graph-updates-itself-by-answering-questions/
-https://www.analyticsvidhya.com/blog/2019/09/introduction-information-extraction-python-spacy/?utm_source=blog&utm_medium=how-to-build-knowledge-graph-text-using-spacy
+https://www.analyticsvidhya.com/blog/2019/09/introduction-information-extraction-python-spacy
 https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
 https://towardsdatascience.com/graph-databases-whats-the-big-deal-ec310b1bc0ed
 https://towardsdatascience.com/extracting-knowledge-from-knowledge-graphs-e5521e4861a0 (edited) 
