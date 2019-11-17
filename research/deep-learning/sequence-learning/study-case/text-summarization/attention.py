@@ -1,8 +1,6 @@
-import os
 import tensorflow as tf
 from tensorflow.python.keras.layers import Layer
 from tensorflow.python.keras import backend as K
-
 
 class AttentionLayer(Layer):
 
@@ -31,6 +29,7 @@ class AttentionLayer(Layer):
         super(AttentionLayer, self).build(input_shape)
 
     def call(self, inputs, verbose=False):
+        
         assert type(inputs) == list
 
         encoder_out_seq, decoder_out_seq = inputs
@@ -42,6 +41,7 @@ class AttentionLayer(Layer):
         def energy_step(inputs, states):
             
             assert_msg = "States must be a list. However states {} is of type {}".format(states, type(states))
+            
             assert isinstance(states, list) or isinstance(states, tuple), assert_msg
 
             en_seq_len, en_hidden = encoder_out_seq.shape[1], encoder_out_seq.shape[2]
@@ -52,7 +52,7 @@ class AttentionLayer(Layer):
             if verbose:
                 print('wa.s > ',W_a_dot_s.shape)
 
-            U_a_dot_h = K.expand_dims(K.dot(inputs, self.U_a), 1)  # (batch_size, 1, latent_dim)
+            U_a_dot_h = K.expand_dims(K.dot(inputs, self.U_a), 1) # (batch_size, 1, latent_dim)
             if verbose:
                 print('Ua.h > ',U_a_dot_h.shape)
 
@@ -71,17 +71,19 @@ class AttentionLayer(Layer):
             c_i = K.sum(encoder_out_seq * K.expand_dims(inputs, -1), axis=1)
             if verbose:
                 print('ci > ', c_i.shape)
+                
             return c_i, [c_i]
 
         def create_inital_state(inputs, hidden_size):
-            fake_state = K.zeros_like(inputs)  # (batch_size, enc_seq_len, latent_dim)
-            fake_state = K.sum(fake_state, axis=[1, 2])  # (batch_size)
-            fake_state = K.expand_dims(fake_state)  # (batch_size, 1)
-            fake_state = K.tile(fake_state, [1, hidden_size])  # (batch_size, latent_dim)
+            fake_state = K.zeros_like(inputs) # (batch_size, enc_seq_len, latent_dim)
+            fake_state = K.sum(fake_state, axis=[1, 2]) # (batch_size)
+            fake_state = K.expand_dims(fake_state) # (batch_size, 1)
+            fake_state = K.tile(fake_state, [1, hidden_size]) # (batch_size, latent_dim)
+            
             return fake_state
 
         fake_state_c = create_inital_state(encoder_out_seq, encoder_out_seq.shape[-1])
-        fake_state_e = create_inital_state(encoder_out_seq, encoder_out_seq.shape[1])  # (batch_size, enc_seq_len, latent_dim
+        fake_state_e = create_inital_state(encoder_out_seq, encoder_out_seq.shape[1]) # (batch_size, enc_seq_len, latent_dim)
 
         # (batch_size, de_seq_len, en_seq_len)
         last_out, e_outputs, _ = K.rnn(
