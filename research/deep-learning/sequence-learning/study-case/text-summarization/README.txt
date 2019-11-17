@@ -12,4 +12,5 @@ TECHNIQUES OF TEXT SUMMARIZATION:
 
 APPLICATION OF TEXT SUMMARIZATION:
 
-1. Reading Time Reduction
+1. Extracting Useful Information (Leaving out The Inessential and Insignificant)
+2. Big Data Readability Enhanchment (Reading Time Reduction)
