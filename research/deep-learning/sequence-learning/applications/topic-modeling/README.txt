@@ -6,7 +6,7 @@ TYPES OF TOPIC MODELING:
 
 TECHNIQUES OF TEXT SUMMARIZATION (Using Gensim or Scikit-learn):
 
-1. Topic Modeling Using Latent Semantic Analysis (LSA) Algorithm
+1. Topic Modeling Using Latent Semantic Analysis (LSA) Algorithm (Linear Model)
 2. Topic Modeling Using Latent Dirichlet Allocation (LDA) Algorithm (as the most popular method in real-world applications)
 
 APPLICATION OF TEXT SUMMARIZATION:
@@ -15,4 +15,5 @@ APPLICATION OF TEXT SUMMARIZATION:
 2. Customer Service Automation
 3. Topic-based News & Articles
 4. Recommender Systems
-5. Knowledge Management
+5. Knowledge Management (E-Mail, Reviews, Surveys, Media Sosial) within Organization
+6. Feature Extraction for other NLP Tasks
