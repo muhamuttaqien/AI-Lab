@@ -8,6 +8,7 @@ TECHNIQUES OF TEXT SUMMARIZATION (Using Gensim or Scikit-learn):
 
 1. Topic Modeling Using Latent Semantic Analysis (LSA) Algorithm (Linear Model)
 2. Topic Modeling Using Latent Dirichlet Allocation (LDA) Algorithm (as the most popular method in real-world applications)
+3. Variant Advanced-LDA (LDA Mallet & LDA2Vec)
 
 APPLICATION OF TEXT SUMMARIZATION:
 

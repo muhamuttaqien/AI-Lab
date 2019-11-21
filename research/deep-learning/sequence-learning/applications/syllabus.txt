@@ -13,9 +13,22 @@ HANDS-ON: https://medium.com/@bhadreshpsavani/tutorial-on-sentimental-analysis-u
 # -----------------------
 https://towardsdatascience.com/a-quick-introduction-to-text-summarization-in-machine-learning-3d27ccf18a9f
 https://towardsdatascience.com/text-summarization-using-deep-learning-6e379ed2e89c
-https://becominghuman.ai/text-summarization-in-5-steps-using-nltk-65b21e352b65
-https://www.analyticsvidhya.com/blog/2019/06/comprehensive-guide-text-summarization-using-deep-learning-python/
-https://blog.floydhub.com/gentle-introduction-to-text-summarization-in-machine-learning/
+https://towardsdatascience.com/comparing-text-summarization-techniques-d1e2e465584e
+HANDS-ON: https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/
+HANDS-ON: https://www.analyticsvidhya.com/blog/2019/06/comprehensive-guide-text-summarization-using-deep-learning-python/
+HANDS-ON: https://becominghuman.ai/text-summarization-in-5-steps-using-nltk-65b21e352b65
+HANDS-ON: https://blog.floydhub.com/gentle-introduction-to-text-summarization-in-machine-learning/
+
+# -------------------
+# SC: Topic Modeling
+# -------------------
+https://monkeylearn.com/topic-analysis/
+https://nlpforhackers.io/topic-modeling/
+https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
+https://www.analyticsvidhya.com/blog/2018/10/stepwise-guide-topic-modeling-latent-semantic-analysis/
+https://www.analyticsvidhya.com/blog/2018/10/mining-online-reviews-topic-modeling-lda/
+HANDS-ON: https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
+HANDS-ON: https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/
 
 # ---------------------
 # SC: Image Captioning
