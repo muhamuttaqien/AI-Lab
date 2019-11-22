@@ -14,7 +14,7 @@ APPLICATION OF TEXT SUMMARIZATION:
 
 1. Real-Time Product Monitoring (Combined with Sentiment Analysis)
 2. Customer Service Automation
-3. Topic-based News & Articles
+3. Topic-based News & Articles (Documents Clustering)
 4. Recommender Systems
 5. Knowledge Management (E-Mail, Reviews, Surveys, Media Sosial) within Organization
-6. Feature Extraction for other NLP Tasks
+6. Feature Extraction/ Selection for other NLP Tasks
