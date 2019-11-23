@@ -35,10 +35,10 @@ HANDS-ON: https://www.machinelearningplus.com/nlp/topic-modeling-visualization-h
 # ------------
 https://chatbotslife.com/ultimate-guide-to-leveraging-nlp-machine-learning-for-you-chatbot-531ff2dd870c
 https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
-https://pytorch.org/tutorials/beginner/chatbot_tutorial.html
-https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e
 https://adeshpande3.github.io/How-I-Used-Deep-Learning-to-Train-a-Chatbot-to-Talk-Like-Me
 https://www.analyticsvidhya.com/blog/2018/01/faq-chatbots-the-future-of-information-searching/
+HANDS-ON: https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e
+HANDS-ON: https://pytorch.org/tutorials/beginner/chatbot_tutorial.html
 
 # ---------------------
 # SC: Image Captioning
