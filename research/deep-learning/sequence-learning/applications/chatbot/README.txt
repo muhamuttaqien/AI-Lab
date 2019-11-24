@@ -7,8 +7,9 @@ TYPES OF CHATBOT:
 
 TECHNIQUES OF BUILDING CHATBOT:
 
-1. Rule-based expression match with complex Machine Learning classifiers for predefined responses
-2. Deep Learning with translation technique using Sequence to Sequence algorithm
+1. Rule-based expression match with a lot of predefined responses
+2. Retrieval-based using Machine Learning classifiers for selecting the best response from a predefined responses
+2. Generative-based using Deep Learning with translation technique (Sequence to Sequence algorithm)
 
 CHALLENGES OF BUILDING CHATBOT:
 
