@@ -25,8 +25,8 @@ def filter_pair(p, max_length):
 def filter_pairs(pairs, max_length):
     return [pair for pair in pairs if filter_pair(pair, max_length)]
 
-def indexes_from_sentence(vocab, sentence):
-    return [vocab.word2index[word] for word in sentence.split(' ')] + [EOS_token]
+def indexes_from_sentence(vocab, sentence, eos_token):
+    return [vocab.word2index[word] for word in sentence.split(' ')] + [eos_token]
 
 def as_minutes(s):
     m = math.floor(s / 60)

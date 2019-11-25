@@ -35,15 +35,15 @@ def filter_pairs(pairs, max_length):
 def indexes_from_sentence(lang, sentence):
     return [lang.word2index[word] for word in sentence.split(' ')]
 
-def tensor_from_sentence(lang, sentence):
+def tensor_from_sentence(lang, sentence, eos_token):
     indexes = indexes_from_sentence(lang, sentence)
-    indexes.append(EOS_token)
+    indexes.append(eos_token)
     
     return torch.tensor(indexes, dtype=torch.long, device=device).view(-1, 1)
 
-def tensor_from_pair(pair):
-    input_tensor = tensor_from_sentence(input_lang, pair[0])
-    target_tensor = tensor_from_sentence(target_lang, pair[1])
+def tensor_from_pair(pair, eos_token):
+    input_tensor = tensor_from_sentence(input_lang, pair[0], eos_token)
+    target_tensor = tensor_from_sentence(target_lang, pair[1], eos_token)
     
     return (input_tensor, target_tensor)
 
