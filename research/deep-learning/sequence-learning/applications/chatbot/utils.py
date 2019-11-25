@@ -1,9 +1,8 @@
 import re
 import math
 import time
+import unicodedata
 import matplotlib.pyplot as plt
-
-import torch
 
 def unicode_to_ascii(s):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
@@ -12,40 +11,22 @@ def normalize_string(s):
     s = unicode_to_ascii(s.lower().strip())
     s = re.sub(r'([.!?])', r' \1', s)
     s = re.sub(r'[^a-zA-Z.!?]+', r' ', s)
+    s = re.sub(r'\s+', r' ', s).strip()
     
     return s
 
-eng_prefixes = (
-    "i am ", "i m ",
-    "he is", "he s ",
-    "she is", "she s ",
-    "you are", "you re ",
-    "we are", "we re ",
-    "they are", "they re "
-)
-
+# returns true if both sentences in a pair 'p' are under the MAX_LENGTH threshold
 def filter_pair(p, max_length):
+    # input sequences need to preserve the last word for EOS token
     return len(p[0].split(' ')) < max_length and \
-           len(p[1].split(' ')) < max_length and \
-           p[1].startswith(eng_prefixes)
-        
+           len(p[1].split(' ')) < max_length
+
+# filter pairs
 def filter_pairs(pairs, max_length):
     return [pair for pair in pairs if filter_pair(pair, max_length)]
 
-def indexes_from_sentence(lang, sentence):
-    return [lang.word2index[word] for word in sentence.split(' ')]
-
-def tensor_from_sentence(lang, sentence, eos_token):
-    indexes = indexes_from_sentence(lang, sentence)
-    indexes.append(eos_token)
-    
-    return torch.tensor(indexes, dtype=torch.long, device=device).view(-1, 1)
-
-def tensor_from_pair(pair, eos_token):
-    input_tensor = tensor_from_sentence(input_lang, pair[0], eos_token)
-    target_tensor = tensor_from_sentence(target_lang, pair[1], eos_token)
-    
-    return (input_tensor, target_tensor)
+def indexes_from_sentence(vocab, sentence, eos_token):
+    return [vocab.word2index[word] for word in sentence.split(' ')] + [eos_token]
 
 def as_minutes(s):
     m = math.floor(s / 60)
