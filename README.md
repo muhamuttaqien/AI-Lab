@@ -7,34 +7,29 @@
 2. Deep Learning (e.g. visual, sequence and reinforcement learning)
 3. Advanced Techniques (e.g. GAN, One-Shot Learning, Symbolic AI, Knowledge Graphs etc.)
 
-In 2019, I have a big plan to release my own well-designed products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Learning-by-doing. Below is the list I envision:
+In 2019, I have a big plan to experiment with various deep learning applications based on Computer Vision (CV) and Natural Language Processing (NLP) technologies. Learning-by-doing. Below is the list I envision:
 
 
-## CV Products
+## CV Applications
 ```text
 1. Object Classification
 2. Object Detection
-3. Real-Time Object Detection
-4. Semantic & Instance Segmentation
-5. Human Pose Detection
+3. Real-time Object Detection
+4. Semantic Segmentation
+5. Instance Segmentation
+6. Human Pose Detection
 ```
 
-## NLP Products
+## NLP Applications
 ```text
 1. Machine Translation System
-2. Search Engine System
-3. Social Media Information Summarisation/ Extraction
-4. Hate Speech/ Sentiment Analysis
-5. Chat-bot System
-```
-
-## CV + NLP Products
-```text
-1. Optical Character Recognition
-2. Image Captioning
-3. Dense Captioning
-4. Visual Question Answering
-5. Shape/ Object Generation
+2. Sentiment Analysis
+3. Text Summarization
+4. Topic Modeling
+5. Chatbot
+6. Image Captioning
+7. Visual Question Answering
+8. Speech Recognition
 ```
 
 And Reinforcement Learning (RL) products will come afterward...
