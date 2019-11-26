@@ -32,8 +32,4 @@ In 2019, I have a big plan to experiment with various deep learning applications
 8. Speech Recognition
 ```
 
-## RL Applications
-```text
-1. Traffic Light Control
-2. Autonomous Systems (Surveilance Drones, Self-Driving Cars, Robotics etc.)
-```
+And Reinforcement Learning (RL) applications will come afterward...
