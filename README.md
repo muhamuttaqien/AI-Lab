@@ -7,7 +7,7 @@
 2. Deep Learning (e.g. visual, sequence and reinforcement learning)
 3. Advanced Techniques (e.g. GAN, One-Shot Learning, Symbolic AI, Knowledge Graphs etc.)
 
-The best way to get deeper into AI technology is to get hands-on with it. In 2019, I have a enthusiastic plan to experiment with various deep learning applications based on Computer Vision (CV) and Natural Language Processing (NLP) technologies. Learning-by-doing. Below is the list I envision:
+The best way to get deeper into AI technology is to get hands-on with it. In 2019, I have an enthusiastic plan to experiment with various deep learning applications based on Computer Vision (CV) and Natural Language Processing (NLP) technologies. Learning-by-doing. Below is the list I envision:
 
 ## CV Applications
 ```text
