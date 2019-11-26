@@ -10,16 +10,17 @@
 In 2019, I have a big plan to release my own well-designed products based on Computer Vision (CV) and Natural Language Processing (NLP) tech. Learning-by-doing. Below is the list I envision:
 
 
-## CV Products
+## CV Applications
 ```text
 1. Object Classification
 2. Object Detection
-3. Real-Time Object Detection
-4. Semantic & Instance Segmentation
-5. Human Pose Detection
+3. Real-time Object Detection
+4. Semantic Segmentation
+5. Instance Segmentation
+6. Human Pose Detection
 ```
 
-## NLP Products
+## NLP Applications
 ```text
 1. Machine Translation System
 2. Sentiment Analysis
@@ -29,15 +30,6 @@ In 2019, I have a big plan to release my own well-designed products based on Com
 6. Image Captioning
 7. Visual Question Answering
 8. Speech Recognition
-```
-
-## CV + NLP Products
-```text
-1. Optical Character Recognition
-2. Image Captioning
-3. Dense Captioning
-4. Visual Question Answering
-5. Shape/ Object Generation
 ```
 
 And Reinforcement Learning (RL) products will come afterward...
