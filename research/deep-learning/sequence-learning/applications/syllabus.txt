@@ -43,11 +43,11 @@ HANDS-ON: https://pytorch.org/tutorials/beginner/chatbot_tutorial.html
 # ---------------------
 # SC: Image Captioning
 # ---------------------
-https://towardsdatascience.com/image-captioning-with-keras-teaching-computers-to-describe-pictures-c88a46a311b8
 https://medium.com/analytics-vidhya/introduction-to-image-caption-generation-using-the-avengers-infinity-war-characters-6f14df09dbe5
 https://medium.com/mlreview/multi-modal-methods-image-captioning-from-translation-to-attention-895b6444256e
-https://www.analyticsvidhya.com/blog/2018/04/solving-an-image-captioning-task-using-deep-learning/
-https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
+https://medium.com/@stepanulyanin/captioning-images-with-pytorch-bc592e5fd1a3
+HANDS-ON: https://www.analyticsvidhya.com/blog/2018/04/solving-an-image-captioning-task-using-deep-learning/
+HANDS-ON: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
 
 # ------------------------------
 # SC: Visual Question Answering
