@@ -17,6 +17,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 4. Semantic Segmentation
 5. Instance Segmentation
 6. Human Pose Detection
+7. Visual Question Answering
 ```
 
 ## NLP Applications
@@ -27,8 +28,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 4. Topic Modeling
 5. Chatbot
 6. Image Captioning
-7. Visual Question Answering
-8. Speech Recognition
+7. Speech Recognition
 ```
 
 ## RL Applications
