@@ -31,4 +31,14 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 8. Speech Recognition
 ```
 
+## RL Applications
+```text
+1. Q-Learning Methods
+2. Deep Q-Learning Methods
+3. Markov Decision Process Methods
+4. Monte Carlo Methods
+5. Temporal-Difference Methods
+6. Actor-Critic Methods
+```
+
 And Reinforcement Learning (RL) applications will come afterward...
