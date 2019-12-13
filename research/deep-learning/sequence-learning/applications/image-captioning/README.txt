@@ -17,3 +17,5 @@ APPLICATION OF IMAGE CAPTIONING:
 
 1. Retrieval-based Image Search engine
 2. Creating Contextual Knowledge to Machines As Key Pillars of AI's Ability
+
+* NOTE: there is an issue of dataloader & images transformation for image captioning so please check it!
