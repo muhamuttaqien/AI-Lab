@@ -35,6 +35,7 @@ def resize_images(image_path, output_path, image_size):
     
     if not os.path.exists(output_path): os.makedirs(output_path)
         
+    print('Reading the images...')
     images = os.listdir(image_path)
     num_images = len(images)
     
