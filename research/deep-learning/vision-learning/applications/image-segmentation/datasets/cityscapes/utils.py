@@ -1,4 +1,5 @@
 import os
+import numpy as np
 from PIL import Image
 
 def get_files(folder, name_filter=None, extension_filter=None):
@@ -30,3 +31,22 @@ def pil_loader(data_path, label_path):
     label = Image.open(label_path)
     
     return data, label
+
+def remap(image, old_values, new_values):
+    
+    assert isinstance(image, Image.Image) or isinstance(image, np.ndarray), "image must be of type PIL.Image or numpy.ndarray"
+    
+    assert type(old_values) is tuple, "old_values must be of type tuple"
+
+    assert type(new_values) is tuple, "new_values must be of type tuple"
+    
+    assert len(old_values) == len(new_values), "new_values and old_values must have the same length"
+    
+    temp = np.zeros_like(image)
+    for old, new in zip(old_values, new_values):
+        
+        if new != 0: 
+            temp[image == old] = new
+            
+    return Image.fromarray(temp)
+          
