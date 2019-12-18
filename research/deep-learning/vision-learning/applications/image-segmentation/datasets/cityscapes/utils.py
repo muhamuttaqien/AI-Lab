@@ -2,11 +2,10 @@ import os
 import numpy as np
 from PIL import Image
 
-def one_hot_encode(labels):
+def one_hot_encode(num_classes, labels):
     
     batch_size, _, h, w = labels.size()
     map_classes = np.unique(labels)
-    num_classes = len(map_classes)
     
     targets = np.zeros((batch_size, num_classes, h, w))
     

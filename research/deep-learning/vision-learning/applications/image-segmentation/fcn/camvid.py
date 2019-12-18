@@ -1,10 +1,13 @@
 import os
+import random
+import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
+
 import utils
 
 class CamVid(torch.utils.data.Dataset):
@@ -31,7 +34,7 @@ class CamVid(torch.utils.data.Dataset):
     from collections import OrderedDict
     
     color_encoding = OrderedDict([
-        ('sky', (128, 128, 128)),
+        ('sky', (128, 128, 128)), # RGB format
         ('building', (128, 0, 0)),
         ('pole', (192, 192, 128)),
         ('road_marking', (255, 69, 0)),
@@ -43,7 +46,7 @@ class CamVid(torch.utils.data.Dataset):
         ('car', (64, 0, 128)),
         ('pedestrian', (64, 64, 0)),
         ('bicyclist', (0, 128, 192)),
-        ('unlabeled', (0, 0, 0))
+        # ('unlabeled', (0, 0, 0))
     ])
     
     def __init__(self, 
@@ -58,6 +61,20 @@ class CamVid(torch.utils.data.Dataset):
         self.data_transform = data_transform
         self.label_transform = label_transform
         self.loader = loader
+        
+        def one_hot_encode(label):
+    
+            _, h, w = label.size()
+            map_classes = np.unique(label)
+            num_classes = len(map_classes)
+
+            target = torch.zeros(12, h, w)
+            for c in range(num_classes):
+                target[c][label[0] == map_classes[c]] = 1
+
+            return target
+
+        self.one_hot_encode = one_hot_encode
         
         # get the training data and labels filepaths
         if self.mode.lower() == 'train':
@@ -107,8 +124,11 @@ class CamVid(torch.utils.data.Dataset):
         
         if self.label_transform is not None:
             label = self.label_transform(label)
-            
-        return image, label
+        
+        # perform one-hot-encoding
+        target = self.one_hot_encode(label)
+        
+        return image, label, target
     
     def __len__(self):
         
