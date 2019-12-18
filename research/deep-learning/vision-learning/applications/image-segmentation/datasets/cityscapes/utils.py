@@ -2,6 +2,20 @@ import os
 import numpy as np
 from PIL import Image
 
+def one_hot_encode(labels):
+    
+    batch_size, _, h, w = labels.size()
+    map_classes = np.unique(labels)
+    num_classes = len(map_classes)
+    
+    targets = np.zeros((batch_size, num_classes, h, w))
+    
+    for i in range(batch_size):
+        for c in range(num_classes):
+            targets[i][c][labels[i,0] == map_classes[c]] = 1
+
+    return num_classes, targets
+
 def get_files(folder, name_filter=None, extension_filter=None):
     
     if not os.path.isdir(folder): raise RuntimeError(f"\"{folder}\" is not a folder.")
