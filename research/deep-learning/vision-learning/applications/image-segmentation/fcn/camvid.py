@@ -1,12 +1,5 @@
 import os
-import random
-import numpy as np
-from PIL import Image
-import matplotlib.pyplot as plt
-
 import torch
-import torch.nn as nn
-import torchvision.transforms as transforms
 
 import utils
 
@@ -53,28 +46,12 @@ class CamVid(torch.utils.data.Dataset):
                  root_dir, 
                  mode='train', 
                  data_transform=None, 
-                 label_transform=None, 
-                 loader=utils.pil_loader):
+                 label_transform=None):
         
         self.root_dir = root_dir
         self.mode = mode
         self.data_transform = data_transform
         self.label_transform = label_transform
-        self.loader = loader
-        
-        def one_hot_encode(label):
-    
-            _, h, w = label.size()
-            map_classes = np.unique(label)
-            num_classes = len(map_classes)
-
-            target = torch.zeros(12, h, w)
-            for c in range(num_classes):
-                target[c][label[0] == map_classes[c]] = 1
-
-            return target
-
-        self.one_hot_encode = one_hot_encode
         
         # get the training data and labels filepaths
         if self.mode.lower() == 'train':
@@ -117,7 +94,7 @@ class CamVid(torch.utils.data.Dataset):
         else:
             raise RuntimeError('Unexpected dataset mode. Supported modes are: train, valid and test')
         
-        image, label = self.loader(data_path, label_path)
+        image, label = utils.pil_loader(data_path, label_path)
         
         if self.data_transform is not None:
             image = self.data_transform(image)
@@ -126,7 +103,8 @@ class CamVid(torch.utils.data.Dataset):
             label = self.label_transform(label)
         
         # perform one-hot-encoding
-        target = self.one_hot_encode(label)
+        target = utils.one_hot_encode(label)
+        target = torch.FloatTensor(target)
         
         return image, label, target
     
