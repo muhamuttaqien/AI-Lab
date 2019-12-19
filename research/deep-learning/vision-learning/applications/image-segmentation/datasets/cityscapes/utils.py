@@ -2,14 +2,14 @@ import os
 import numpy as np
 from PIL import Image
 
-def one_hot_encode(label):
+def one_hot_encode(num_classes, label):
     
     _, h, w = label.size()
     map_classes = np.unique(label)
-    num_classes = len(map_classes)
+    num_map_classes = len(map_classes)
 
-    target = np.zeros((12, h, w))
-    for c in range(num_classes):
+    target = np.zeros((num_classes, h, w))
+    for c in range(num_map_classes):
         target[c][label[0] == map_classes[c]] = 1
 
     return target
