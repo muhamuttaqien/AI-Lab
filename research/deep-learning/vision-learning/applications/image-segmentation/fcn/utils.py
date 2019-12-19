@@ -1,5 +1,42 @@
 import os
+import numpy as np
 from PIL import Image
+
+def calculate_iou(pred, label, n_class):
+    
+    iou = []
+    for i in range(n_class):
+        pred_index = pred == i
+        label_index = label == i
+        
+        intersection = pred_index[label_index].sum()
+        union = pred_index.sum() + label_index.sum() - intersection
+        
+        if union == 0:
+            iou.append(float('nan')) # if there is no ground truth, do not include in evaluation
+        else:
+            iou.append(float(intersection) / max(union, 1))
+    
+    return iou
+
+def calculate_accuracy(pred, label):
+    
+    correct = (pred == label).sum()
+    total = (label == label).sum()
+    
+    return correct / total
+
+def one_hot_encode(label):
+    
+    _, h, w = label.size()
+    map_classes = np.unique(label)
+    num_classes = len(map_classes)
+
+    target = np.zeros((12, h, w))
+    for c in range(num_classes):
+        target[c][label[0] == map_classes[c]] = 1
+
+    return target
 
 def get_files(folder, name_filter=None, extension_filter=None):
     
