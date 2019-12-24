@@ -50,13 +50,13 @@ class GridworldEnv(discrete.DiscreteEnv):
             is_done = lambda s: s == 0 or s == (nS - 1)
             reward = 0.0 if is_done(s) else -1.0
 
-            # We're stuck in a terminal state
+            # the agent is stuck in a terminal state
             if is_done(s):
-                P[s][UP] = [(1.0, s, reward, True)]
+                P[s][UP] = [(1.0, s, reward, True)] # prob, next_state, reward, done
                 P[s][RIGHT] = [(1.0, s, reward, True)]
                 P[s][DOWN] = [(1.0, s, reward, True)]
                 P[s][LEFT] = [(1.0, s, reward, True)]
-            # Not a terminal state
+            # not a terminal state
             else:
                 ns_up = s if y == 0 else s - MAX_X
                 ns_right = s if x == (MAX_X - 1) else s + 1
@@ -108,3 +108,4 @@ class GridworldEnv(discrete.DiscreteEnv):
                 outfile.write("\n")
 
             it.iternext()
+            
