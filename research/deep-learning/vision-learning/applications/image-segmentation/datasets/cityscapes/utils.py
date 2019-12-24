@@ -2,30 +2,7 @@ import os
 import numpy as np
 from PIL import Image
 
-def one_hot_encode(num_classes, label):
-    
-    _, h, w = label.size()
-    map_classes = np.unique(label)
-    num_map_classes = len(map_classes)
-
-    target = np.zeros((num_classes, h, w))
-    for c in range(num_map_classes):
-        target[c][label[0] == map_classes[c]] = 1
-
-    return target
-
-def one_hot_encode_for_sanity_check(num_classes, labels):
-    
-    batch_size, _, h, w = labels.size()
-    map_classes = np.unique(labels)
-    
-    targets = np.zeros((batch_size, num_classes, h, w))
-    
-    for i in range(batch_size):
-        for c in range(num_classes):
-            targets[i][c][labels[i,0] == map_classes[c]] = 1
-
-    return num_classes, targets
+import torch
 
 def get_files(folder, name_filter=None, extension_filter=None):
     
@@ -67,6 +44,9 @@ def remap(image, old_values, new_values):
     
     assert len(old_values) == len(new_values), "new_values and old_values must have the same length"
     
+    if isinstance(image, Image.Image):
+        image = np.array(image)
+
     temp = np.zeros_like(image)
     for old, new in zip(old_values, new_values):
         
@@ -75,3 +55,21 @@ def remap(image, old_values, new_values):
             
     return Image.fromarray(temp)
           
+class PILToLongTensor(object):
+    
+    def __call__(self, pic):
+        
+        if not isinstance(pic, Image.Image):
+            raise TypeError("pic should be PIL Image. Got {}".format(type(pic)))
+
+        if isinstance(pic, np.ndarray):
+            img = torch.from_numpy(pic.transpose((2, 0, 1)))
+            return img.long()
+
+        img = torch.ByteTensor(torch.ByteStorage.from_buffer(pic.tobytes()))
+
+        nchannel = len(pic.mode)
+        img = img.view(pic.size[1], pic.size[0], nchannel)
+
+        return img.transpose(0, 1).transpose(0, 2).contiguous().long().squeeze_()
+    
