@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot_values(V):
+def plot_values(V, shape=(4,4)):
     
     # reshape value function
-    V_sq = np.reshape(V, (4,4))
+    V_sq = np.reshape(V, shape)
     
     # plot the state-value function
     fig = plt.figure(figsize=(6,6))
