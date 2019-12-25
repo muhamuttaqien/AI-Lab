@@ -146,6 +146,9 @@ class FrozenLakeEnv(discrete.DiscreteEnv):
                             rew = float(newletter == b'G')
                             li.append((1.0, newstate, rew, done))
 
+        # obtain one-step dynamics for dynamic programming setting
+        self.P = P
+        
         super(FrozenLakeEnv, self).__init__(nS, nA, P, isd)
 
     def render(self, mode='human'):
