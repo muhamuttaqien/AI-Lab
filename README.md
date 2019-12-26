@@ -33,12 +33,13 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 
 ## RL Applications
 ```text
-1. Q-Learning Method
-2. Deep Q-Learning Method (DQN, CNN-DQN, Double DQN & Dueling DQN Agent)
-3. Markov Decision Process Method
-4. Monte Carlo Method
-5. Temporal-Difference Method
-6. Actor-Critic Method
+1. MDP Using Dynamic Programming Method
+2. Monte Carlo Method
+3. Temporal-Difference Method
+4. Actor-Critic Method
+5. Multi Agent Method
+6. Q-Learning Method
+7. Deep Q-Learning Method (DQN, CNN-DQN, Double DQN & Dueling DQN Agent)
 ```
 
 And Reinforcement Learning (RL) applications will come afterward...
