@@ -7,7 +7,7 @@ def plot_values(V, name='State', shape=(4,4)):
     V_sq = np.reshape(V, shape)
     
     # plot the state-value function
-    fig = plt.figure(figsize=(6,6))
+    fig = plt.figure(figsize=(8,8))
     ax = fig.add_subplot(111)
     im = ax.imshow(V_sq, cmap='cool')
     
