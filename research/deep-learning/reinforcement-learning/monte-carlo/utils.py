@@ -30,7 +30,7 @@ def plot_blackjack_values(V):
     ax.set_title('Usable Ace')
     get_figure(True, ax)
     ax = fig.add_subplot(212, projection='3d')
-    ax.ste_title('No Usable Ace')
+    ax.set_title('No Usable Ace')
     get_figure(False, ax)
     plt.show()
     
