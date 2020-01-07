@@ -22,7 +22,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 7. Visual Question Answering
 ```
 
-## NLP Applications
+## [NLP](https://en.wikipedia.org/wiki/Natural_language_processing) Applications
 ```text
 1. Machine Translation System
 2. Sentiment Analysis
