@@ -9,7 +9,7 @@
 
 ![](./ai-programming/ai-walpaper.jpg)
 
-The best way to get deeper into AI technology is to get hands-on with it. In 2019-2020, I have an enthusiastic plan to conduct experiments with various deep learning applications based on Computer Vision (CV), Natural Language Processing (NLP) and Reinforcement Learning (RL) technologies. Learning-by-doing. Below is the list I envision:
+The best way to get deeper into AI technology is to get hands-on with it. In 2019-2020, I have an enthusiastic plan to conduct experiments with numerous and diverse deep learning applications based on Computer Vision (CV), Natural Language Processing (NLP) and Reinforcement Learning (RL) technologies. Learning-by-doing. Below is the list I envision:
 
 ## CV Applications
 ```text
