@@ -49,5 +49,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 This project requires **Python 3.7.3** and the following Python libraries installed:
 
 * [NumPy](http://www.numpy.org/)
-* [matplotlib](http://matplotlib.org/)
+* [Matplotlib](http://matplotlib.org/)
+* [OpenCV](https://opencv.org/)
+* [Keras](https://keras.io/)
 * [PyTorch](https://pytorch.org/)
