@@ -11,7 +11,7 @@
 
 The best way to get deeper into AI technology is to get hands-on with it. In 2019-2020, I have an enthusiastic plan to conduct experiments with numerous and diverse deep learning applications based on Computer Vision (CV), Natural Language Processing (NLP) and Reinforcement Learning (RL) technologies. Through learning-by-doing, below is the list I envision:
 
-## CV Applications
+## [CV](https://en.wikipedia.org/wiki/Computer_vision) Applications
 ```text
 1. Object Classification
 2. Object Detection
@@ -22,7 +22,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 7. Visual Question Answering
 ```
 
-## NLP Applications
+## [NLP](https://en.wikipedia.org/wiki/Natural_language_processing) Applications
 ```text
 1. Machine Translation System
 2. Sentiment Analysis
@@ -33,7 +33,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 7. Speech Recognition
 ```
 
-## RL Applications
+## [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) Applications
 ```text
 1. MDP Using Dynamic Programming Method
 2. Monte Carlo Method
