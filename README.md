@@ -52,4 +52,4 @@ This project requires **Python 3.7.3** and the following Python libraries instal
 * Domain-supporting Libraries: [OpenCV](https://opencv.org/), [NLTK](https://www.nltk.org/), [Gym](http://gym.openai.com/)
 * Deep-learning Libraries: [Keras](https://keras.io/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/)
 
-📩 if any discussion, please contact me anytime: muha.muttaqien@gmail.com
+📨if any discussion, please contact me anytime: muha.muttaqien@gmail.com
