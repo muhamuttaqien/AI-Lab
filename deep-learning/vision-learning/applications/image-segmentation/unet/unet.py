@@ -51,12 +51,12 @@ class UNet(nn.Module):
         x4 = self.down3_layer(x3)
         x5 = self.down4_layer(x4)
         
-        x = self.up1(x5, x4)
-        x = self.up2(x, x3)
-        x = self.up3(x, x2)
-        x = self.up4(x, x1)
+        x = self.up1_layer(x5, x4)
+        x = self.up2_layer(x, x3)
+        x = self.up3_layer(x, x2)
+        x = self.up4_layer(x, x1)
         
-        logits = self.output_layer
+        logits = self.output_layer(x)
         return logits
 
 
