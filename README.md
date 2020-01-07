@@ -7,7 +7,9 @@
 2. Deep Learning (e.g. visual, sequence and reinforcement learning)
 3. Advanced Techniques (e.g. GAN, One-Shot Learning, Symbolic AI, Knowledge Graphs etc.)
 
-The best way to get deeper into AI technology is to get hands-on with it. In 2019, I have an enthusiastic plan to experiment with various deep learning applications based on Computer Vision (CV) and Natural Language Processing (NLP) technologies. Learning-by-doing. Below is the list I envision:
+![](./ai-programming/ai-walpaper.jpg)
+
+The best way to get deeper into AI technology is to get hands-on with it. In 2019-2020, I have an enthusiastic plan to conduct experiments with various deep learning applications based on Computer Vision (CV), Natural Language Processing (NLP) and Reinforcement Learning (RL) technologies. Learning-by-doing. Below is the list I envision:
 
 ## CV Applications
 ```text
@@ -42,4 +44,10 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 7. Deep Q-Learning Method (DQN, CNN-DQN, Double DQN & Dueling DQN Agent)
 ```
 
-And Reinforcement Learning (RL) applications will come afterward...
+## Dependencies
+
+This project requires **Python 3.7.3** and the following Python libraries installed:
+
+* [NumPy](http://www.numpy.org/)
+* [matplotlib](http://matplotlib.org/)
+* [PyTorch](https://pytorch.org/)
