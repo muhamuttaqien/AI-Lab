@@ -53,5 +53,5 @@ class Agent:
         
         # apply Sarsamax or Q-learning update rule
         new_value = (1 - alpha) * current_value + (alpha * (reward + gamma * Qsa_next))
-        self.Q_table[state, action] = new_value
+        self.Q_table[state][action] = new_value
         
