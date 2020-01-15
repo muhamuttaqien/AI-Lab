@@ -1,0 +1,62 @@
+REINFORCEMENT LEARNING SYLLABUS
+
+RL INTRODUCTION
+https://www.analyticsvidhya.com/blog/2016/12/getting-ready-for-ai-based-gaming-agents-overview-of-open-source-reinforcement-learning-platforms/
+https://www.analyticsvidhya.com/blog/2017/01/introduction-to-reinforcement-learning-implementation/
+
+DEEP Q LEARNING
+Siraj Rival: https://www.youtube.com/watch?v=aCEvtRtNO-M
+https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
+https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/
+
+RL MARKOV-DECISION PROCESS
+https://towardsdatascience.com/reinforcement-learning-demystified-36c39c11ec14
+https://towardsdatascience.com/reinforcement-learning-demystified-markov-decision-processes-part-1-bf00dda41690
+https://towardsdatascience.com/reinforcement-learning-demystified-markov-decision-processes-part-2-b209e8617c5a
+https://towardsdatascience.com/reinforcement-learning-demystified-solving-mdps-with-dynamic-programming-b52c8093c919
+https://medium.com/@sanchittanwar75/markov-chains-and-markov-decision-process-e91cda7fa8f2
+
+DYNAMIC PROGRAMMING
+https://medium.com/deep-math-machine-learning-ai/ch-12-reinforcement-learning-complete-guide-towardsagi-ceea325c5d53
+https://towardsdatascience.com/reinforcement-learning-demystified-solving-mdps-with-dynamic-programming-b52c8093c919
+https://towardsdatascience.com/reinforcement-learning-demystified-exploration-vs-exploitation-in-multi-armed-bandit-setting-be950d2ee9f6
+https://medium.com/@zsalloum/dynamic-programming-in-reinforcement-learning-the-easy-way-359c7791d0ac
+
+MONTE CARLO
+https://www.analyticsvidhya.com/blog/2018/11/reinforcement-learning-introduction-monte-carlo-learning-openai-gym/
+https://medium.com/@zsalloum/monte-carlo-in-reinforcement-learning-the-easy-way-564c53010511
+https://towardsdatascience.com/monte-carlo-learning-b83f75233f92
+
+TEMPORAL-DIFFERENCE
+https://medium.com/analytics-vidhya/nuts-and-bolts-of-reinforcement-learning-introduction-to-temporal-difference-td-learning-a0624eb3b985
+https://medium.com/deep-math-machine-learning-ai/ch-12-1-model-free-reinforcement-learning-algorithms-monte-carlo-sarsa-q-learning-65267cb8d1b4
+https://towardsdatascience.com/temporal-difference-learning-47b4a7205ca8
+https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/
+
+ADVANCED TEMPORAL-DIFFERENCE
+https://medium.com/zero-equals-false/n-step-td-method-157d3875b9cb
+https://towardsdatascience.com/reinforcement-learning-td-%CE%BB-introduction-686a5e4f4e60
+
+RL IN CONTINUOUS STATES
+https://towardsdatascience.com/reinforcement-learning-generalisation-in-continuous-state-space-df943b04ebfa
+https://medium.com/@ts1829/solving-mountain-car-with-q-learning-b77bf71b1de2
+https://towardsdatascience.com/getting-started-with-reinforcement-learning-and-open-ai-gym-c289aca874f
+https://towardsdatascience.com/function-approximation-in-reinforcement-learning-85a4864d566
+
+DEEP Q-NETWORK
+https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/
+https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
+https://towardsdatascience.com/dqn-part-1-vanilla-deep-q-networks-6eb4a00febfb
+https://www.freecodecamp.org/news/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe/
+
+DOUBLE & DUELING DQN
+https://medium.com/@qempsil0914/deep-q-learning-part2-double-deep-q-network-double-dqn-b8fc9212bbb2
+https://towardsdatascience.com/double-deep-q-networks-905dd8325412
+https://medium.com/@pythonlessons0/introduction-to-dueling-double-deep-q-network-d3qn-8353a42f9e55
+https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
+https://www.freecodecamp.org/news/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682/
+
+INTERMEZZO
+https://medium.com/beyond-intelligence/reinforcement-learning-or-evolutionary-strategies-nature-has-a-solution-both-8bc80db539b3
+https://towardsdatascience.com/reinforcement-learning-for-real-world-robotics-148c81dbdcff
+https://towardsdatascience.com/what-to-expect-from-reinforcement-learning-a22e8c16f40c
