@@ -4,7 +4,7 @@
 🔬 Absolutely comfort lab for me to work around with my own AI pieces of stuff and see a lot of surprises, often times, indistinguishable from magic. The major exploration topics include:
 
 1. Machine Learning
-2. Deep Learning (e.g. visual, sequence and reinforcement learning)
+2. Deep Learning (e.g. vision, sequence and reinforcement learning)
 3. Advanced Techniques (e.g. GAN, One-Shot Learning, Symbolic AI, Knowledge Graphs etc.)
 
 `Now, I'm working on Reinforcement Learning`
