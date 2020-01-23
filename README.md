@@ -48,7 +48,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 
 ## Dependencies
 
-This project requires **Python 3.7.3** and the following Python libraries installed:
+This lab requires **Python 3.7.3** and the following Python libraries installed:
 
 * Basic Libraries: [NumPy](http://www.numpy.org/), [Matplotlib](http://matplotlib.org/)
 * Domain-supporting Libraries: [OpenCV](https://opencv.org/), [NLTK](https://www.nltk.org/), [Gym](http://gym.openai.com/)
