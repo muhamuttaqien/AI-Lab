@@ -26,9 +26,21 @@ The environment contains 37 dimensions and the agent's velocity, along with ray-
 
 There are four possible discreate actions that agent can perform including 0 for move forward, 1 for move backward, 2 for turn left and 3 for turn right.
 
-## Project Installment
+## Project Installation
 
 #### Step 1: Clone the DRLND Repository
 1. Configure your Python environment by following instructions described in the [DRLND Github repository](https://github.com/udacity/deep-reinforcement-learning#dependencies). The instructions can be found in the [Readme.md](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Readme.md) file.
 2. By following the instructions, then you will have your own PyTorch, the ML-agents toolkit, and all the Python packages required to complete the project.
 3. (For Windows users) The ML-agents toolkit supports Windows 10.
+
+#### Step 2: Download the Unity Environment
+For running this project you need to install the Unity environment as completely described in the [Getting Started section](https://github.com/udacity/deep-reinforcement-learning/blob/master/p1_navigation/README.md.
+
+#### Step 3: Explore the Environment
+After you have followed two installment steps above, then you can explore the project environment by opening `Navigation.ipynb` located on the root repository. You can follow the instructions to learn how to use the Python API to control the agent.
+
+## Train The Agent
+You can try to train the agent yourself by executing the provided jupyter notebook within this project repository. By working in your local environment, the workspace will allow you to see the simulator of the environment and watch directly how our trained agent smartly behaves with the environment.
+
+## Discussions
+📨 if any discussion, please contact me anytime: muha.muttaqien@gmail.com
