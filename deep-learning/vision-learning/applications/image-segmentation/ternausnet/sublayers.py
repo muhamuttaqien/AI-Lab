@@ -8,8 +8,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from torchvision import models
-
 
 # In[2]:
 
@@ -48,11 +46,11 @@ class Down(nn.Module):
 # In[4]:
 
 
-class Up(nn.Module):
+class Up_11(nn.Module):
     
     def __init__(self, in_channels, middle_channels, out_channels):
         
-        super(Up, self).__init__()
+        super(Up_11, self).__init__()
         
         self.up_layer = nn.Sequential(Conv(in_channels, middle_channels), 
                                       nn.ConvTranspose2d(middle_channels, out_channels, 
@@ -63,6 +61,24 @@ class Up(nn.Module):
 
 
 # In[5]:
+
+
+class Up_16(nn.Module):
+    
+    def __init__(self, in_channels, middle_channels, out_channels):
+        
+        super(Up_16, self).__init__()
+        
+        self.up_layer = nn.Sequential(Conv(in_channels, middle_channels),
+                                      nn.ConvTranspose2d(middle_channels, out_channels, 
+                                                         kernel_size=4, stride=2, padding=1), 
+                                      nn.ReLU(inplace=True))
+    
+    def forward(self, x):
+        return self.up_layer(x)
+
+
+# In[6]:
 
 
 class OutputConv(nn.Module):
