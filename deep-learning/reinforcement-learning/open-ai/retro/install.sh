@@ -2,7 +2,7 @@
 
 git clone --recursive https://github.com/openai/retro.git gym-retro
 cd gym-retro
-pip3 install -e .
+pip install -e .
 
 git submodule deinit -f --all
 rm -rf .git/modules
