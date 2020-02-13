@@ -1,0 +1,116 @@
+TOPICS OF Sequence Learning
+
+1. Word Embeddings
+2. Knowledge Graph
+3. RNN, LSTM, GRU
+4. RNN-CNN
+5. SEQ2SEQ
+6. Attention
+7. ULMfit
+8. Transformers, GPT & BERT
+
+# ----------
+# BASIC NLP
+# ----------
+— NLP Pipeline
+https://www.analyticsvidhya.com/blog/2017/01/ultimate-guide-to-understand-implement-natural-language-processing-codes-in-python/
+
+— Word Embeddings
+https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/
+https://machinelearningmastery.com/what-are-word-embeddings/
+https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
+https://medium.com/explore-artificial-intelligence/word2vec-a-baby-step-in-deep-learning-but-a-giant-leap-towards-natural-language-processing-40fe4e8602ba
+https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/
+https://towardsdatascience.com/elmo-contextual-language-embedding-335de2268604
+https://towardsdatascience.com/elmo-helps-to-further-improve-your-word-embeddings-c6ed2c9df95f
+http://jalammar.github.io/illustrated-word2vec/
+
+— NLP Implementation
+https://medium.com/@ageitgey/machine-learning-is-fun-part-5-language-translation-with-deep-learning-and-the-magic-of-sequences-2ace0acca0aa
+https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
+
+# ----------------
+# Knowledge Graph
+# ----------------
+https://geomarketing.com/geo-101-what-is-the-knowledge-graph
+https://www.analyticsvidhya.com/blog/2018/09/introduction-graph-theory-applications-python/
+http://www.seobythesea.com/2018/10/how-googles-knowledge-graph-updates-itself-by-answering-questions/
+https://www.analyticsvidhya.com/blog/2019/09/introduction-information-extraction-python-spacy
+https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
+https://towardsdatascience.com/graph-databases-whats-the-big-deal-ec310b1bc0ed
+https://towardsdatascience.com/extracting-knowledge-from-knowledge-graphs-e5521e4861a0 (edited) 
+
+# ----
+# RNN
+# ----
+https://medium.com/@ageitgey/machine-learning-is-fun-part-2-a26a10b68df3
+https://www.analyticsvidhya.com/blog/2017/12/introduction-to-recurrent-neural-networks/
+https://medium.com/explore-artificial-intelligence/an-introduction-to-recurrent-neural-networks-72c97bf0912
+https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9
+https://blog.floydhub.com/a-beginners-guide-on-recurrent-neural-networks-with-pytorch/
+
+# ------
+# LSTM
+# ------
+https://www.analyticsvidhya.com/blog/2017/12/fundamentals-of-deep-learning-introduction-to-lstm/
+https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+https://medium.com/datathings/the-magic-of-lstm-neural-networks-6775e8b540cd
+https://medium.com/explore-artificial-intelligence/lstm-networks-c300d3cb8ac4
+https://blog.floydhub.com/long-short-term-memory-from-zero-to-hero-with-pytorch/
+
+# -----
+# GRU
+# -----
+https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be
+https://blog.floydhub.com/gru-with-pytorch/
+
+# --------
+# RNN-CNN
+# --------
+https://towardsdatascience.com/how-to-build-a-gated-convolutional-neural-network-gcnn-for-natural-language-processing-nlp-5ba3ee730bfb
+http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/
+
+# --------
+# SEQ2SEQ
+# --------
+https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+https://towardsdatascience.com/attention-seq2seq-with-pytorch-learning-to-invert-a-sequence-34faf4133e53
+https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346
+https://towardsdatascience.com/natural-language-understanding-with-sequence-to-sequence-models-e87d41ad258b
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+https://machinelearningmastery.com/encoder-decoder-long-short-term-memory-networks/
+https://machinelearningmastery.com/encoder-decoder-attention-sequence-to-sequence-prediction-keras/
+
+# ----------
+# ATTENTION
+# ----------
+https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f
+https://machinelearningmastery.com/attention-long-short-term-memory-recurrent-neural-networks/
+https://machinelearningmastery.com/how-does-attention-work-in-encoder-decoder-recurrent-neural-networks/
+http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/
+https://medium.com/datalogue/attention-in-keras-1892773a4f22
+https://towardsdatascience.com/practical-guide-to-attention-mechanism-for-nlu-tasks-ccc47be8d500
+https://machinelearningmastery.com/calculate-bleu-score-for-text-python/
+https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213
+
+# -------
+# ULMfit
+# -------
+https://medium.com/mlreview/understanding-building-blocks-of-ulmfit-818d3775325b
+https://yashuseth.blog/2018/06/17/understanding-universal-language-model-fine-tuning-ulmfit/
+https://www.analyticsvidhya.com/blog/2018/11/tutorial-text-classification-ulmfit-fastai-library/
+
+# -------------------------
+# TRANSFORMERS, GPT & BERT
+# -------------------------
+Transformers & BERT
+https://towardsdatascience.com/transformers-141e32e69591
+http://jalammar.github.io/illustrated-transformer/
+https://blog.floydhub.com/the-transformer-in-pytorch/
+https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models/
+https://www.analyticsvidhya.com/blog/2019/07/pytorch-transformers-nlp-python/
+http://jalammar.github.io/illustrated-bert/
+http://jalammar.github.io/illustrated-gpt2/
+https://blog.floydhub.com/gpt2/
+https://blog.floydhub.com/when-the-best-nlp-model-is-not-the-best-choice/
