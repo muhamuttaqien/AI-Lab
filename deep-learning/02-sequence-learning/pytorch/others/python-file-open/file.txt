@@ -1,2 +1,0 @@
-This is my file.
-Try to open file using python.

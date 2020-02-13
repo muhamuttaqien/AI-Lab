@@ -1,1 +1,0 @@
-Backbones: AlexNet, VGGNet, GoogleNet, ResNet

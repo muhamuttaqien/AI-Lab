@@ -1,1 +1,0 @@
-Pre-trained word embedding weight will be located here.
