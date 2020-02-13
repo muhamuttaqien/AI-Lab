@@ -1,0 +1,90 @@
+TOPICS OF Vision Learning
+
+1. Capsule Network
+2. Style Transfer
+3. GAN (Vanilla, DCGAN, CycleGAN)
+4. AutoEncoder (Vanilla, Denoising, Variational)
+5. N-Shot Learning (Zero, One)
+6. Boltzmann Machines (Vanilla, Restricted, DBN)
+7. Graph Convolutional Networks (Geometric Deep Learning)
+
+# -----------------
+# Capsule Networks
+# -----------------
+https://cezannec.github.io/Capsule_Networks/
+https://medium.com/ai%C2%B3-theory-practice-business/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b
+
+# ---------------
+# Style Transfer
+# ---------------
+https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-neural-style-transfer-ef88e46697ee
+https://medium.com/data-science-group-iitr/artistic-style-transfer-with-convolutional-neural-network-7ce2476039fd
+
+# --------------------------------------
+# Generative Adversarial Networks (GAN)
+# --------------------------------------
+https://machinelearningmastery.com/impressive-applications-of-generative-adversarial-networks/
+https://machinelearningmastery.com/how-to-develop-a-generative-adversarial-network-for-a-1-dimensional-function-from-scratch-in-keras/
+https://machinelearningmastery.com/how-to-train-stable-generative-adversarial-networks/
+https://towardsdatascience.com/dcgans-deep-convolutional-generative-adversarial-networks-c7f392c2c8f8
+https://medium.com/@jonathan_hui/gan-dcgan-deep-convolutional-generative-adversarial-networks-df855c438f
+https://machinelearningmastery.com/how-to-train-stable-generative-adversarial-networks/
+https://medium.com/@utk.is.here/keep-calm-and-train-a-gan-pitfalls-and-tips-on-training-generative-adversarial-networks-edd529764aa9
+https://machinelearningmastery.com/what-is-cyclegan/
+https://medium.com/@jonathan_hui/gan-cyclegan-6a50e7600d7
+https://machinelearningmastery.com/how-to-implement-the-inception-score-from-scratch-for-evaluating-generated-images/
+https://machinelearningmastery.com/how-to-implement-the-frechet-inception-distance-fid-from-scratch/
+
+# ------------
+# AutoEncoder
+# ------------
+https://medium.com/@vaibhaw.vipul/building-autoencoder-in-pytorch-34052d1d280c
+https://ai-odyssey.com/2017/02/07/autoencoders%e2%80%8a/
+https://towardsdatascience.com/denoising-autoencoders-explained-dbb82467fc2
+https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf
+https://medium.com/@dmonn/what-are-variational-autoencoders-a-simple-explanation-ea7dccafb0e3
+https://www.jeremyjordan.me/autoencoders/
+https://www.jeremyjordan.me/variational-autoencoders/
+https://graviraja.github.io/vanillavae/#
+
+# --------------------------
+# Siamese Neural Networks
+# --------------------------
+https://towardsdatascience.com/one-shot-learning-with-siamese-networks-using-keras-17f34e75bb3d
+https://becominghuman.ai/siamese-networks-algorithm-applications-and-pytorch-implementation-4ffa3304c18
+https://towardsdatascience.com/siamese-network-triplet-loss-b4ca82c1aec8
+https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e
+https://sorenbouma.github.io/blog/oneshot/
+
+# ---------------------
+# Zero-Shot Learning
+# ---------------------
+https://www.quora.com/What-is-zero-shot-learning
+https://towardsdatascience.com/applications-of-zero-shot-learning-f65bb232963f
+https://medium.com/@cetinsamet/zero-shot-learning-53080995d45f
+
+# --------------------
+# Boltzmann Machines
+# --------------------
+https://medium.com/machine-learning-for-li/restricted-boltzmann-machines-rbms-d355c4b5ebfa
+https://heartbeat.fritz.ai/guide-to-restricted-boltzmann-machines-using-pytorch-ee50d1ed21a8
+https://medium.com/@neuralnets/boltzmann-machines-transformation-of-unsupervised-deep-learning-part-1-42659a74f530
+https://medium.com/datadriveninvestor/an-intuitive-introduction-of-boltzmann-machine-8ec54980d789
+https://towardsdatascience.com/deep-learning-meets-physics-restricted-boltzmann-machines-part-i-6df5c4918c15
+
+# -----------------------------------
+# (STACKED RBM) DEEP BELIEF NETWORK
+# -----------------------------------
+https://codeburst.io/deep-learning-deep-belief-network-fundamentals-d0dcfd80d7d4
+https://medium.com/datadriveninvestor/deep-learning-deep-belief-network-dbn-ab715b5b8afc
+https://medium.com/@icecreamlabs/deep-belief-networks-all-you-need-to-know-68aa9a71cc53
+https://github.com/mehulrastogi/Deep-Belief-Network-pytorch
+
+# ------------------------------
+# Graph Convolutional Networks
+# ------------------------------
+https://medium.com/@flawnsontong1/what-is-geometric-deep-learning-b2adb662d91d
+https://towardsdatascience.com/a-gentle-introduction-to-graph-neural-network-basics-deepwalk-and-agraphsage-db5d540d50b3
+https://towardsdatascience.com/hands-on-graph-neural-networks-with-pytorch-pytorch-geometric-359487e221a8
+https://medium.com/syncedreview/meet-deep-graph-library-a-python-package-for-graph-neural-networks-d4fda7defb62
+https://github.com/tkipf/pygcn
