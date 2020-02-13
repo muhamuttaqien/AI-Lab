@@ -1,3 +1,0 @@
-Faster-RCNN
-SSD
-Yolo

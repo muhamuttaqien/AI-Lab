@@ -1,1 +1,0 @@
-Pre-trained word embedding model will be located here.
