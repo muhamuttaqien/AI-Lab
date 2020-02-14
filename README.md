@@ -37,7 +37,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 
 ## RL Applications
 ```text
-1. MDP Using Dynamic Programming Method
+1. Dynamic Programming Method for MDPs
 2. Monte Carlo Method
 3. Temporal-Difference Method (Sarsa, Sarsamax, Expected Sarsa)
 4. Value-Based Method (DQN, Double-DQN, PER-DQN, Dueling-DQN, Noisy-DQN, Distributional-DQN, Rainbow-DQN)
