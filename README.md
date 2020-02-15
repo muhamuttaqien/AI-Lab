@@ -5,7 +5,7 @@
 
 1. Machine Learning
 2. Deep Learning (e.g. vision, sequence and reinforcement learning)
-3. Advanced Techniques (e.g. GAN, One-Shot Learning, Symbolic AI, Knowledge Graphs etc.)
+3. Advanced Techniques (e.g. GAN, One-Shot Learning, Transformer, Knowledge Graphs etc.)
 
 `Now, I'm working on Reinforcement Learning`
 
