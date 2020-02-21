@@ -14,13 +14,12 @@ else: device = torch.device('cpu')
 class ReplayBuffer(object):
     """Fixed-size buffer to store experience tuples."""
     
-    def __init__(self, action_size, buffer_size, batch_size, seed):
+    def __init__(self, buffer_size, batch_size, seed):
         """Initialize a ReplayMemory object."""
         
         self.experience = namedtuple("Experience", field_names=["state", "action", "reward", "next_state", "done"])
         self.seed = random.seed(seed)
         
-        self.action_size = action_size
         self.memory = deque(maxlen=buffer_size)
         self.batch_size = batch_size
 
