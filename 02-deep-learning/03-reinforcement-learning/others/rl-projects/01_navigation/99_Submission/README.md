@@ -3,7 +3,7 @@
 This project repository is my work on 1st Project: Navigation for Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
 
 ## Project's Description
-In this navigation project, I have to train an agent to navigate on a large square world and collect yellow bananas. The goal is to collect as many yellow bananas as possible while at the same time avoiding blue bananas. The task is episodic, and in order to solve the environment, the agent must get an average score of at least +13 over 100 consecutive episodes.
+In this Navigation project, I have to train an agent to navigate on a large square world and collect yellow bananas. The goal is to collect as many yellow bananas as possible while at the same time avoiding blue bananas. The task is episodic, and in order to solve the environment, the agent must get an average score of at least +13 over 100 consecutive episodes.
 
 ![In Project 1, train an agent to navigate a large world.](./images/yellow_bananas_collector.gif)
 
@@ -34,7 +34,7 @@ There are four possible discreate actions that agent can perform including 0 for
 3. (For Windows users) The ML-agents toolkit supports Windows 10.
 
 #### Step 2: Download the Unity Environment
-For running this project you need to install the Unity environment as completely described in the [Getting Started section](https://github.com/udacity/deep-reinforcement-learning/blob/master/p1_navigation/README.md.
+For running this project you need to install the Unity environment as completely described in the [Getting Started section](https://github.com/udacity/deep-reinforcement-learning/blob/master/p1_navigation/README.md).
 
 #### Step 3: Explore the Environment
 After you have followed two installment steps above, then you can explore the project environment by opening `Navigation.ipynb` located on the root repository. You can follow the instructions to learn how to use the Python API to control the agent.
