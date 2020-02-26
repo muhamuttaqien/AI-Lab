@@ -21,3 +21,4 @@ class ValueNetwork(nn.Module):
         """Initialize parameters and build model."""
         
         super(ValueNetwork, self).__init__()
+        
