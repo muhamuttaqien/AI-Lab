@@ -37,9 +37,9 @@ class PolicyNetwork(nn.Module):
         self.fc2_linear.weight.data.uniform_(*hidden_init(self.fc2_linear))
         self.fc3_linear.weight.data.uniform_(-3e-3, 3e-3)
         
-    def forward(self, state):
+    def forward(self, states):
         
-        x = self.normalizer(state)
+        x = self.normalizer(states)
 
         x = F.relu(self.fc1_linear(x))
         x = F.relu(self.fc2_linear(x))
@@ -75,13 +75,13 @@ class ValueNetwork(nn.Module):
         self.fc2_linear.weight.data.uniform_(*hidden_init(self.fc2_linear))
         self.fc3_linear.weight.data.uniform_(-3e-3, 3e-3)
         
-    def forward(self, state, action):
+    def forward(self, states, actions):
         
-        x = self.normalizer(state)
+        x = self.normalizer(states)
         
-        xs = F.leaky_relu(self.fcs1_linear(x))
-        x = torch.cat((xs, action), dim=1)
-        x = F.leaky_relu(self.fc2_linear(x))
+        xs = F.relu(self.fcs1_linear(x))
+        x = torch.cat((xs, actions), dim=1)
+        x = F.relu(self.fc2_linear(x))
         x = self.dropout(x)
         Qsa = self.fc3_linear(x)
         
