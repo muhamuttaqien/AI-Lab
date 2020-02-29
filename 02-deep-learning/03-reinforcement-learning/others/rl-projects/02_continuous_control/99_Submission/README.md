@@ -6,6 +6,8 @@ This project repository is my work on 2nd Project: Continuous Control for Udacit
 
 In this Continuous Control project, I have to train an agent to control a double-jointed arm move to target location. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible. The task is episodic, and in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 
+![In Project 2, train an agent to control a robotic arms.](./images/robotic_arm_reacher.gif)
+
 ## The Environment
 
 The environment is provided by [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents). For this project, you will work with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment on the Unity ML-agents Github page.
