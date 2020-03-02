@@ -3,12 +3,12 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.distributions import MultivariateNormal
+from torch.distributions import Categorical
 
 class PolicyNetwork(nn.Module):
     """Policy Network."""
     
-    def __init__(self, state_size, action_size, action_std, seed):
+    def __init__(self, state_size, action_size, seed):
         """Initialize parameters and build model."""
         
         super(PolicyNetwork, self).__init__()
@@ -17,29 +17,25 @@ class PolicyNetwork(nn.Module):
         
         self.state_size = state_size
         self.action_size = action_size
-        self.action_std = action_std
-        
+
         self.policy_layer =  nn.Sequential(nn.Linear(self.state_size, 64), 
                                            nn.Tanh(), 
-                                           nn.Linear(64, 32), 
+                                           nn.Linear(64, 64), 
                                            nn.Tanh(), 
-                                           nn.Linear(32, self.action_size), 
-                                           nn.Tanh())
+                                           nn.Linear(64, self.action_size), 
+                                           nn.Softmax(dim=-1))
         
         self.value_layer = nn.Sequential(nn.Linear(state_size, 64), 
                                          nn.Tanh(), 
-                                         nn.Linear(64, 32), 
+                                         nn.Linear(64, 64), 
                                          nn.Tanh(), 
-                                         nn.Linear(32, 1))
-                
-        self.action_var = torch.full((self.action_size,), self.action_std*self.action_std)
-        
+                                         nn.Linear(64, 1))
+    
     def act(self, state):
         
-        action_mean = self.policy_layer(state)
-        action_var = self.action_var
+        action_probs = self.policy_layer(state)
         
-        return action_mean, action_var
+        return action_probs
                                     
     def evaluate(self, state):
     
