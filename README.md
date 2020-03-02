@@ -48,7 +48,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 
 ## Robotics Applications
 ```
-The time will soon come.
+The time will come soon.
 ```
 
 ## Dependencies
