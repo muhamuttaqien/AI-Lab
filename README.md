@@ -46,6 +46,11 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 7. Multi-Agent Method
 ```
 
+## Robotics Applications
+```
+The time will come soon.
+```
+
 ## Dependencies
 
 This lab requires **Python 3.7.3** and the following Python libraries installed:
