@@ -57,12 +57,28 @@ https://pylessons.com/CartPole-DDDQN/
 https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
 https://www.freecodecamp.org/news/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682/
 
-Noisy-DQN
+NOISY-DQN
 https://medium.com/@shmuma/summary-noisy-networks-for-exploration-c8ba6e2759c7/
 https://openai.com/blog/better-exploration-with-parameter-noise/
 
-Distributional-DQN
+DISTRIBUTIONAL-DQN
 https://clarelyle.com/posts/2019-02-08-aaai.html
 
 CNN-DQN
 https://towardsdatascience.com/atari-reinforcement-learning-in-depth-part-1-ddqn-ceaa762a546f/
+
+POLICY-BASED METHOD: Reinforce
+https://www.freecodecamp.org/news/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f/
+https://towardsdatascience.com/the-almighty-policy-gradient-in-reinforcement-learning-6790bee8db6
+https://medium.com/@jonathan_hui/rl-policy-gradients-explained-9b13b688b146
+https://medium.com/@jonathan_hui/rl-policy-gradients-explained-advanced-topic-20c2b81a9a8b
+
+POLICY-BASED: PPO & TRPO
+https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12
+https://medium.com/analytics-vidhya/understanding-proximal-policy-optimization-ppo-and-its-implementation-on-mario-game-environment-31ab4ee024ab
+https://medium.com/@jonathan_hui/rl-trust-region-policy-optimization-trpo-explained-a6ee04eeeee9
+https://medium.com/@jonathan_hui/rl-trust-region-policy-optimization-trpo-part-2-f51e3b2e373a
+https://towardsdatascience.com/proximal-policy-optimization-ppo-with-sonic-the-hedgehog-2-and-3-c9c21dbed5e
+
+ACTOR-CRITIC: A2C/A3C, GAE, DDPG
+https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/
