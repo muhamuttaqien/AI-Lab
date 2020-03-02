@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torch.distributions import MultivariateNormal
 
 class PolicyNetwork(nn.Module):
-    """Policy (Actor) Network."""
+    """Policy Network."""
     
     def __init__(self, state_size, action_size, action_std, seed):
         """Initialize parameters and build model."""
