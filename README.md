@@ -7,7 +7,7 @@
 2. Deep Learning (e.g. vision, sequence and reinforcement learning)
 3. Advanced Techniques (e.g. GAN, One-Shot Learning, Transformer, Knowledge Graphs etc.)
 
-`Now, I'm working on Reinforcement Learning`
+`Now, I'm conducting research on Reinforcement Learning`
 
 ![](./others/ai-walpaper.jpg)
 
