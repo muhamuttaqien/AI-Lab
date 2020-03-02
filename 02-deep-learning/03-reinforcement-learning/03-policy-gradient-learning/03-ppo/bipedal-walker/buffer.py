@@ -9,3 +9,6 @@ class BasicBuffer(object):
         del self.states[:]; del self.actions[:]; del self.rewards[:]; del self.dones[:]
         del self.log_probs[:]
         
+    def __len__(self):
+        return len(self.states)
+    
