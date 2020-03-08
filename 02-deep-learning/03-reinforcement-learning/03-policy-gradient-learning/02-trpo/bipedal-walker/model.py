@@ -16,8 +16,8 @@ class PolicyNetwork(nn.Module):
         self.state_size = state_size
         self.action_size = action_size
         
-        self.affine1_layer = nn.Linear(self.state_size, 64)
-        self.affine2_layer = nn.Linear(64, 64)
+        self.affine1_layer = nn.Linear(self.state_size, 128)
+        self.affine2_layer = nn.Linear(128, 64)
         
         self.action_mean = nn.Linear(64, self.action_size)
         self.action_mean.weight.data.mul_(0.1)
@@ -51,8 +51,8 @@ class ValueNetwork(nn.Module):
         self.seed = torch.manual_seed(seed)
         self.state_size = state_size
         
-        self.affine1_layer = nn.Linear(self.state_size, 64)
-        self.affine2_layer = nn.Linear(64, 64)
+        self.affine1_layer = nn.Linear(self.state_size, 128)
+        self.affine2_layer = nn.Linear(128, 64)
         
         self.value_head = nn.Linear(64, 1)
         self.value_head.weight.data.mul_(0.1)
