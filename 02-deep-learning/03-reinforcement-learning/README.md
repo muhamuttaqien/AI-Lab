@@ -1,1 +1,1 @@
-Reinforcement Learning Research.
+[RL](https://en.wikipedia.org/wiki/Reinforcement_learning) Reinforcement Learning Research.
