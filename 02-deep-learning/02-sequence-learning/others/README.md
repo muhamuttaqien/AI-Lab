@@ -1,1 +1,0 @@
-My sequence learning explorations.
