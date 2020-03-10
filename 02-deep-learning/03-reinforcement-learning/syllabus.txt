@@ -43,28 +43,28 @@ https://medium.com/@ts1829/solving-mountain-car-with-q-learning-b77bf71b1de2
 https://towardsdatascience.com/getting-started-with-reinforcement-learning-and-open-ai-gym-c289aca874f
 https://towardsdatascience.com/function-approximation-in-reinforcement-learning-85a4864d566
 
-DEEP Q-NETWORK
+VALUE-BASED METHOD: DEEP Q-NETWORK
 https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/
 https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 https://pylessons.com/CartPole-reinforcement-learning/
 https://towardsdatascience.com/dqn-part-1-vanilla-deep-q-networks-6eb4a00febfb
 https://www.freecodecamp.org/news/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe/
 
-DOUBLE, DUELING, PER-DQN
+VALUE-BASED METHOD: DOUBLE, DUELING, PER-DQN
 https://pylessons.com/CartPole-DDQN/
 https://towardsdatascience.com/double-deep-q-networks-905dd8325412
 https://pylessons.com/CartPole-DDDQN/
 https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
 https://www.freecodecamp.org/news/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682/
 
-NOISY-DQN
+VALUE-BASED METHOD: NOISY-DQN
 https://medium.com/@shmuma/summary-noisy-networks-for-exploration-c8ba6e2759c7/
 https://openai.com/blog/better-exploration-with-parameter-noise/
 
-DISTRIBUTIONAL-DQN
+VALUE-BASED METHOD: DISTRIBUTIONAL-DQN
 https://clarelyle.com/posts/2019-02-08-aaai.html
 
-CNN-DQN
+VALUE-BASED METHOD: CNN-DQN
 https://towardsdatascience.com/atari-reinforcement-learning-in-depth-part-1-ddqn-ceaa762a546f/
 
 POLICY-BASED METHOD: Reinforce
@@ -73,12 +73,19 @@ https://towardsdatascience.com/the-almighty-policy-gradient-in-reinforcement-lea
 https://medium.com/@jonathan_hui/rl-policy-gradients-explained-9b13b688b146
 https://medium.com/@jonathan_hui/rl-policy-gradients-explained-advanced-topic-20c2b81a9a8b
 
-POLICY-BASED: PPO & TRPO
-https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12
-https://medium.com/analytics-vidhya/understanding-proximal-policy-optimization-ppo-and-its-implementation-on-mario-game-environment-31ab4ee024ab
+POLICY-BASED METHOD: TRPO & PPO
 https://medium.com/@jonathan_hui/rl-trust-region-policy-optimization-trpo-explained-a6ee04eeeee9
 https://medium.com/@jonathan_hui/rl-trust-region-policy-optimization-trpo-part-2-f51e3b2e373a
 https://towardsdatascience.com/proximal-policy-optimization-ppo-with-sonic-the-hedgehog-2-and-3-c9c21dbed5e
+https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12
+https://medium.com/analytics-vidhya/understanding-proximal-policy-optimization-ppo-and-its-implementation-on-mario-game-environment-31ab4ee024ab
+https://openai.com/blog/openai-baselines-ppo/
+https://openai.com/blog/evolution-strategies/
 
-ACTOR-CRITIC: A2C/A3C, GAE, DDPG
+ACTOR-CRITIC METHOD: A2C/A3C, GAE, DDPG
 https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/
+
+MULTI-AGENT BASED
+https://medium.com/@RemiStudios/multi-agent-reinforcement-learning-3f00b561f5f0
+https://towardsdatascience.com/modern-game-theory-and-multi-agent-reinforcement-learning-systems-e8c936d6de42
+https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning
