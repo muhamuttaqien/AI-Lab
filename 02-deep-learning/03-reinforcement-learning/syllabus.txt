@@ -88,4 +88,5 @@ https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-let
 MULTI-AGENT BASED
 https://medium.com/@RemiStudios/multi-agent-reinforcement-learning-3f00b561f5f0
 https://towardsdatascience.com/modern-game-theory-and-multi-agent-reinforcement-learning-systems-e8c936d6de42
+https://towardsdatascience.com/a-crash-course-in-game-theory-for-machine-learning-classic-and-new-ideas-50e33ba2636d
 https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning
