@@ -78,7 +78,7 @@ class ValueNetwork(nn.Module):
     def forward(self, states, actions):
         
         xs = torch.cat((states, actions), dim=1)
-        x = F.relu(self.fc1_layer(xs))
+        x = F.relu(self.fc1_linear(xs))
         x = self.normalizer(x)
         x = F.relu(self.fc2_linear(x))
         Qsa = self.fc3_linear(x)
@@ -96,4 +96,3 @@ class ActorCriticNetwork():
         critic_input_size = (state_size+action_size) * num_agents
         self.critic = ValueNetwork(critic_input_size, action_size, seed)
         self.critic_target = ValueNetwork(critic_input_size, action_size, seed)
-        
