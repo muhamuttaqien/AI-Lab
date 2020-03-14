@@ -73,7 +73,7 @@ https://towardsdatascience.com/the-almighty-policy-gradient-in-reinforcement-lea
 https://medium.com/@jonathan_hui/rl-policy-gradients-explained-9b13b688b146
 https://medium.com/@jonathan_hui/rl-policy-gradients-explained-advanced-topic-20c2b81a9a8b
 
-POLICY-BASED METHOD: TRPO & PPO
+POLICY-BASED METHOD: TRPO, PPO & Evolution Strategies
 https://medium.com/@jonathan_hui/rl-trust-region-policy-optimization-trpo-explained-a6ee04eeeee9
 https://medium.com/@jonathan_hui/rl-trust-region-policy-optimization-trpo-part-2-f51e3b2e373a
 https://towardsdatascience.com/proximal-policy-optimization-ppo-with-sonic-the-hedgehog-2-and-3-c9c21dbed5e
@@ -81,6 +81,7 @@ https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-7
 https://medium.com/analytics-vidhya/understanding-proximal-policy-optimization-ppo-and-its-implementation-on-mario-game-environment-31ab4ee024ab
 https://openai.com/blog/openai-baselines-ppo/
 https://openai.com/blog/evolution-strategies/
+https://medium.com/@benjamin.phillips22/evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-paper-summary-691161b52ddd
 
 ACTOR-CRITIC METHOD: A2C/A3C, GAE, DDPG
 https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/
