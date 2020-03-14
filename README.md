@@ -4,7 +4,7 @@
 🔬 Absolutely comfort lab for me to work around with my own AIs and to empirically observe how powerful and impactful these technologies are. The key research topics are listed as follows:
 
 1. Machine Learning
-2. Deep Learning (e.g. [vision](https://github.com/muhamuttaqien/AI-Lab/tree/develop/02-deep-learning/01-vision-learning), sequence and reinforcement learning)
+2. Deep Learning (e.g. [vision](https://github.com/muhamuttaqien/AI-Lab/tree/develop/02-deep-learning/01-vision-learning), [sequence](https://github.com/muhamuttaqien/AI-Lab/tree/develop/02-deep-learning/02-sequence-learning) and reinforcement[https://github.com/muhamuttaqien/AI-Lab/tree/develop/02-deep-learning/03-reinforcement-learning] learning)
 3. Advanced Techniques (e.g. GAN, Zero-Shot Learning, Transformer, Multi-Agent Learning etc.)
 
 `Now, I'm conducting research on Reinforcement Learning`
