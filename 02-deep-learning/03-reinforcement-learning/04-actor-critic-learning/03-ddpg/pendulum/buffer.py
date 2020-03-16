@@ -1,7 +1,5 @@
-import os
 import random
 import numpy as np
-import matplotlib.pyplot as plt
 from collections import namedtuple, deque
 
 import torch
@@ -25,7 +23,7 @@ class ReplayBuffer(object):
         self.batch_size = batch_size
 
     def add(self, state, action, reward, next_state, done):
-        """Add a new experience to buffer."""
+        """Add a new experience to memory."""
         
         self.memory.append(self.experience(state, action, reward, next_state, done))
         
