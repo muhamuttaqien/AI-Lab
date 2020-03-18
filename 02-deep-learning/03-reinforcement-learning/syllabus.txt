@@ -90,4 +90,7 @@ MULTI-AGENT BASED
 https://medium.com/@RemiStudios/multi-agent-reinforcement-learning-3f00b561f5f0
 https://towardsdatascience.com/modern-game-theory-and-multi-agent-reinforcement-learning-systems-e8c936d6de42
 https://towardsdatascience.com/a-crash-course-in-game-theory-for-machine-learning-classic-and-new-ideas-50e33ba2636d
+https://medium.com/@samuelpun/key-learnings-on-implementing-multi-agent-deep-deterministic-policy-gradient-maddpg-for-unity-2ccd365fb98c
+https://medium.com/brillio-data-science/improving-openai-multi-agent-actor-critic-rl-algorithm-27719f3cafd4
+https://openai.com/blog/learning-to-cooperate-compete-and-communicate/
 https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning
