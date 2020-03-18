@@ -1,4 +1,4 @@
-# Deep Reinforcement Learning : Navigation
+# Deep Reinforcement Learning : Collaboration and Competition
 
 
 ## Project's Description
