@@ -27,7 +27,7 @@ class ReplayBuffer(object):
     def sample(self):
         """Randomly sample a batch of trajectories from memory."""
         
-        states, actions, log_probs_old, rewards, advantages = map(lambda x: torch.cat(x, dim=0), zip(*self.memory))
+        states, actions, log_probs_old, returns, advantages = map(lambda x: torch.cat(x, dim=0), zip(*self.memory))
         advantages = (advantages - advantages.mean()) / advantages.std()
         
         indices = np.arange(states.size()[0])
@@ -38,7 +38,7 @@ class ReplayBuffer(object):
         for index in indices:
             if len(index) >= self.batch_size / 2:
                 index = torch.LongTensor(index).to(device)
-                result.append([states[index], actions[index], log_probs_old[index], rewards[index], advantages[index]])
+                result.append([states[index], actions[index], log_probs_old[index], returns[index], advantages[index]])
         return result
     
     def reset(self):
