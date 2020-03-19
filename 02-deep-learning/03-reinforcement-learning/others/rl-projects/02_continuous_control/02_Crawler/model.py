@@ -1,5 +1,4 @@
 import numpy as np
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -112,13 +111,19 @@ class PolicyNetwork(nn.Module):
         self.critic = CriticNetwork(self.state_size, self.action_size, seed)
         self.action_std = nn.Parameter(torch.ones(1, self.action_size)*0.15)
 
-    def act(self, state):
+    def forward(self, states, actions=None, scale=1.):
+
+        action_means = self.actor(states)
+        state_values = self.critic(states)
         
-        action_mean = self.actor(state)
-        return action_mean
-        
-    def evaluate(self, state):
-        
-        Qsa = self.critic(state)
-        return Qsa
-        
+        dist = torch.distributions.Normal(action_means, F.hardtanh(self.action_std, min_val=0.06*scale, max_val=0.6*scale))
+
+        if actions is None:
+            actions = dist.sample()
+            
+        action_log_probs = dist.log_prob(actions)
+        action_log_probs = torch.sum(action_log_probs, dim=1, keepdim=True)
+
+        dist_entropies = dist.entropy().mean()
+
+        return actions, action_log_probs, state_values, dist_entropies
