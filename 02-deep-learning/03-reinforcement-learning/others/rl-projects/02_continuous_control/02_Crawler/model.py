@@ -48,9 +48,9 @@ class ActorNetwork(nn.Module):
         x = F.relu(self.fc1_linear(self.bn1(state)))
         x = F.relu(self.fc2_linear(self.bn2(x)))
         x = F.relu(self.fc3_linear(self.bn3(x)))
-        x = F.tanh(self.fc4_linear(self.bn4(x)))
+        action_means = F.tanh(self.fc4_linear(self.bn4(x)))
         
-        return x
+        return action_means
     
 class CriticNetwork(nn.Module):
     """Critic (Value) Model."""
@@ -90,9 +90,9 @@ class CriticNetwork(nn.Module):
         x = F.relu(self.fc1_linear(self.bn1(state)))
         x = F.relu(self.fc2_linear(self.bn2(x)))
         x = F.relu(self.fc3_linear(self.bn3(x)))
-        x = F.tanh(self.fc4_linear(self.bn4(x)))
+        Qsa = F.tanh(self.fc4_linear(self.bn4(x)))
         
-        return x
+        return Qsa
     
 class PolicyNetwork(nn.Module):
     """Policy Network."""
