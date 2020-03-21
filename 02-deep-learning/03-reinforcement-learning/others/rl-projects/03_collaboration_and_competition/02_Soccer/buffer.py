@@ -20,12 +20,12 @@ class ReplayBuffer(object):
         
         self.memory = []
 
-    def add(self, state, action, reward, next_state, done):
+    def add(self, actor_state, critic_state, action, log_prob, reward):
         """Add a new experience to buffer."""
         
         self.memory.append(self.experience(actor_state, critic_state, action, log_prob, reward))
         
-    def get_experiences(self, clear=True):
+    def get_experiences(self):
         """Get collected experiences."""
         
         actor_states = np.vstack([exp.actor_state for exp in self.memory if exp is not None])
@@ -35,19 +35,17 @@ class ReplayBuffer(object):
         rewards = np.vstack([exp.reward for exp in self.memory if exp is not None])
         
         num_experiences = len(self)
-        
-        if clear: self.clear()
             
         return (actor_states, critic_states, actions, log_probs, rewards, num_experiences)
     
     def delete(self, index):
         """Delete experience by index."""
         del self.memory[index]
-        
-    def clear(self):
-        """Clear all collected experiences."""
-        self.memory.clear()
     
+    def reset(self):
+        """Reset all collected experiences from memory."""
+        self.memory = []
+        
     def __len__(self):
         """Return the current size of internal memory."""
         return len(self.memory)
