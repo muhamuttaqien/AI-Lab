@@ -1,8 +1,6 @@
-import os
 import random
 import numpy as np
-import matplotlib.pyplot as plt
-from collections import namedtuple, deque
+from collections import namedtuple
 
 import torch
 
@@ -10,45 +8,45 @@ is_cuda = torch.cuda.is_available()
 
 if is_cuda: device = torch.device('cuda')
 else: device = torch.device('cpu')
-
-
+    
 class ReplayBuffer(object):
     """Fixed-size buffer to store experience tuples."""
     
-    def __init__(self, buffer_size, batch_size, seed):
+    def __init__(self, batch_size, seed):
+        """Initialize a ReplayMemory object."""
         
-        self.experience = namedtuple("Experience", field_names=["state", "action", "reward", "next_state", "done"])
-        self.seed = random.seed(seed)
+        self.experience = namedtuple('Experience', field_names=['actor_state', 'critic_state', 'action', 'log_prob', 'reward'])        
+        self.seed = np.random.seed(seed)
         
-        self.memory = deque(maxlen=buffer_size)
-        self.batch_size = batch_size
-        
-    def add(self, state, action, reward, next_state, done):
+        self.memory = []
+
+    def add(self, actor_state, critic_state, action, log_prob, reward):
         """Add a new experience to buffer."""
         
-        self.memory.append(self.experience(state, action, reward, next_state, done))
+        self.memory.append(self.experience(actor_state, critic_state, action, log_prob, reward))
         
-    def sample(self):
-        """Randomly sample a batch of experiences from memory."""
-        experiences = random.sample(self.memory, k=self.batch_size)
+    def get_experiences(self):
+        """Get collected experiences."""
         
-        states = torch.from_numpy(np.vstack([exp.state for exp in experiences if exp is not None])).float()
-        states = states.to(device)
+        actor_states = np.vstack([exp.actor_state for exp in self.memory if exp is not None])
+        critic_states = np.vstack([exp.critic_state for exp in self.memory if exp is not None])
+        actions = np.vstack([exp.action for exp in self.memory if exp is not None])
+        log_probs = np.vstack([exp.log_prob for exp in self.memory if exp is not None])
+        rewards = np.vstack([exp.reward for exp in self.memory if exp is not None])
         
-        actions = torch.from_numpy(np.vstack([exp.action for exp in experiences if exp is not None])).float()
-        actions = actions.to(device)
-        
-        rewards = torch.from_numpy(np.vstack([exp.reward for exp in experiences if exp is not None])).float()
-        rewards = rewards.to(device)
-        
-        next_states = torch.from_numpy(np.vstack([exp.next_state for exp in experiences if exp is not None])).float()
-        next_states = next_states.to(device)
-        
-        dones = torch.from_numpy(np.vstack([exp.done for exp in experiences if exp is not None]).astype(np.uint8)).float()
-        dones = dones.to(device)
-        
-        return (states, actions, rewards, next_states, dones)
+        num_experiences = len(self)
+            
+        return (actor_states, critic_states, actions, log_probs, rewards, num_experiences)
+    
+    def delete(self, index):
+        """Delete experience by index."""
+        del self.memory[index]
+    
+    def reset(self):
+        """Reset all collected experiences from memory."""
+        self.memory = []
         
     def __len__(self):
         """Return the current size of internal memory."""
         return len(self.memory)
+    
