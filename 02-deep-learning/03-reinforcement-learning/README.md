@@ -29,4 +29,4 @@ Actor-Critic Method
 Multi-Agent Method
 * [MADDPG](https://arxiv.org/pdf/1706.02275.pdf)
 * [MFMARL](https://arxiv.org/pdf/1802.05438.pdf)
-* MINIMAX-Q
+* Minimax-Q
