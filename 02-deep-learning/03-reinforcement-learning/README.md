@@ -4,6 +4,11 @@
 * [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 * [Deep Reinforcement Learning: Hands-on by Maxim Lapan](https://www.packtpub.com/data/deep-reinforcement-learning-hands-on-second-edition)
 
+## Online Materials
+* [DeepMind's Blog](https://deepmind.com/blog)
+* [OpenAI's Blog](https://openai.com/blog/)
+* [Deep RL UC Berkeley](http://rail.eecs.berkeley.edu/deeprlcourse/)
+
 ## Supporting Research Papers
 
 Value-Based Method
