@@ -1,7 +1,8 @@
 [[RL](https://en.wikipedia.org/wiki/Reinforcement_learning)] Reinforcement Learning Research.
 
 ## Text Books
-[Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
+* [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
+* [Deep Reinforcement Learning: Hands-on by Maxim Lapan](https://www.packtpub.com/data/deep-reinforcement-learning-hands-on-second-edition)
 
 ## Supporting Research Papers
 
