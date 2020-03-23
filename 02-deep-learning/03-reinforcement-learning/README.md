@@ -3,6 +3,7 @@
 ## Text Books
 * [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 * [Deep Reinforcement Learning: Hands-on by Maxim Lapan](https://www.packtpub.com/data/deep-reinforcement-learning-hands-on-second-edition)
+* [Statistical Reinforcement Learning: Modern Machine Learning Approaches by Masashi Sugiyama](https://www.crcpress.com/Statistical-Reinforcement-Learning-Modern-Machine-Learning-Approaches/Sugiyama/p/book/9781439856895)
 
 ## Online Materials
 * [DeepMind's Blog](https://deepmind.com/blog)
