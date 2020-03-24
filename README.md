@@ -43,7 +43,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 4. Value-Based Method (DQN, Double-DQN, PER-DQN, Dueling-DQN, Noisy-DQN, Distributional-DQN, Rainbow-DQN)
 5. Policy-Based Method (Reinforce, TRPO, PPO)
 6. Actor-Critic Method (A2C/A3C, GAE, DDPG)
-7. Multi-Agent Method (MADDPG, minimaxQ)
+7. Multi-Agent Method (MADDPG, MFMARL)
 ```
 
 ## Robotics Applications
