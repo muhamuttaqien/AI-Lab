@@ -24,7 +24,7 @@ Value-Based Method
 
 Policy-Based Method
 
-* Reinforce
+* [Reinforce](https://link.springer.com/content/pdf/10.1007/BF00992696.pdf)
 * [TRPO](https://arxiv.org/pdf/1502.05477.pdf)
 * [PPO](https://arxiv.org/pdf/1707.06347.pdf)
 
