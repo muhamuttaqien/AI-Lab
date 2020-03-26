@@ -8,7 +8,8 @@
 ## Online Materials
 * [DeepMind's Blog](https://deepmind.com/blog)
 * [OpenAI's Blog](https://openai.com/blog/)
-* [Deep Reinforcement Learning, CS 285 at UC Berkeley](http://rail.eecs.berkeley.edu/deeprlcourse/)
+* [Introduction to Reinforcement Learning, David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ)
+* [Reinforcement Learning, CS234 at Stanford University](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
 * [Deep RL Bootcamp, Berkeley CA](https://sites.google.com/view/deep-rl-bootcamp/lectures)
 
 ## Supporting Research Papers
