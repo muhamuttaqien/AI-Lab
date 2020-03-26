@@ -8,7 +8,8 @@
 ## Online Materials
 * [DeepMind's Blog](https://deepmind.com/blog)
 * [OpenAI's Blog](https://openai.com/blog/)
-* [Deep RL UC Berkeley](http://rail.eecs.berkeley.edu/deeprlcourse/)
+* [Deep Reinforcement Learning, CS 285 at UC Berkeley](http://rail.eecs.berkeley.edu/deeprlcourse/)
+* [Deep RL Bootcamp, Berkeley CA](https://sites.google.com/view/deep-rl-bootcamp/lectures)
 
 ## Supporting Research Papers
 
