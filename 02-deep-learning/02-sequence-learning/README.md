@@ -5,6 +5,6 @@
 * [NLP and Computational Linguistics: A Practical Guide to Text Analysis by Bhargav Srinivasa-Desikan](https://www.amazon.com/Natural-Language-Processing-Computational-Linguistics-ebook/dp/B07BWH779J/ref=sr_1_1?qid=1585192525&refinements=p_27%3ABhargav+Srinivasa-Desikan&s=books&sr=1-1&text=Bhargav+Srinivasa-Desikan)
 
 ## Online Materials
-* [Natural Language Processing with Deep Learning, CS224n at Stanford University](http://web.stanford.edu/class/cs224n/)
+* [NLP with Deep Learning, CS224n at Stanford University](http://web.stanford.edu/class/cs224n/)
 
 
