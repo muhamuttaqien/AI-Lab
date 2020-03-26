@@ -6,11 +6,11 @@
 * [Statistical Reinforcement Learning: Modern Machine Learning Approaches by Masashi Sugiyama](https://www.crcpress.com/Statistical-Reinforcement-Learning-Modern-Machine-Learning-Approaches/Sugiyama/p/book/9781439856895)
 
 ## Online Materials
-* [DeepMind's Blog](https://deepmind.com/blog)
-* [OpenAI's Blog](https://openai.com/blog/)
-* [Introduction to Reinforcement Learning, David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ)
 * [Reinforcement Learning, CS234 at Stanford University](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
 * [Deep RL Bootcamp, Berkeley CA](https://sites.google.com/view/deep-rl-bootcamp/lectures)
+* [Introduction to Reinforcement Learning, David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ)
+* [DeepMind's Blog](https://deepmind.com/blog)
+* [OpenAI's Blog](https://openai.com/blog/)
 
 ## Supporting Research Papers
 
