@@ -12,7 +12,7 @@
 * [DeepMind's Blog](https://deepmind.com/blog)
 * [OpenAI's Blog](https://openai.com/blog/)
 
-## Supporting Research Papers
+## Research Papers
 
 Value-Based Method
 
