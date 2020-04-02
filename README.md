@@ -56,7 +56,7 @@ The time will come soon.
 This lab requires **Python 3.7.3** and the following Python libraries installed:
 
 * Basic Libraries: [NumPy](http://www.numpy.org/), [Matplotlib](http://matplotlib.org/)
-* Domain-supporting Libraries: [OpenCV](https://opencv.org/), [NLTK](https://www.nltk.org/), [Gym](http://gym.openai.com/)
+* Domain-specific Libraries: [OpenCV](https://opencv.org/), [NLTK](https://www.nltk.org/), [Gym](http://gym.openai.com/)
 * Deep-learning Frameworks: [Keras](https://keras.io/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/), [ReNom](http://www.renom.jp/)
 
 📨 That's all, for any discussion kindly contact me here: muha.muttaqien@gmail.com
