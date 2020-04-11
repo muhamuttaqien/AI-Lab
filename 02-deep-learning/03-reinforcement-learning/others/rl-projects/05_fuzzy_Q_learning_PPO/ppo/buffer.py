@@ -8,25 +8,20 @@ class ReplayBuffer(object):
     
     def __init__(self, capacity):
         
-        self.data = deque(maxlen=capacity)
-        self.memory = deque(maxlen=96)
-        self.pointer = 0
-        
+        self.memory = deque(maxlen=capacity)
+            
     def add(self, state, action, reward, next_state, done):
         
         experience = (state, action, reward, next_state, done)
-        self.data.append(experience)
-        
-        if self.pointer < len(self.data):
-            self.pointer += 1
+        self.memory.append(experience)
             
     def sample(self, batch, agents=1):
         
         if agents == 1:
             
-            states = np.array([self.data[i][0] for i in batch])
-            actions = np.array([self.data[i][1] for i in batch])
-            next_states = np.array([self.data[i][3] for i in batch])
+            states = np.array([self.memory[i][0] for i in batch])
+            actions = np.array([self.memory[i][1] for i in batch])
+            next_states = np.array([self.memory[i][3] for i in batch])
         else:
             
             states = []
@@ -35,12 +30,12 @@ class ReplayBuffer(object):
             
             for i_agent in range(agents):
                 
-                states.append(np.array([self.data[i][0][i_agent] for i in batch]))
-                actions.append(np.array([self.data[i][1][i_agent] for i in batch]))
-                next_states.append(np.array([self.data[i][3][i_agent] for i in batch]))
+                states.append(np.array([self.memory[i][0][i_agent] for i in batch]))
+                actions.append(np.array([self.memory[i][1][i_agent] for i in batch]))
+                next_states.append(np.array([self.memory[i][3][i_agent] for i in batch]))
                 
-        rewards = np.array([self.data[i][2] for i in batch])
-        dones = np.array([self.data[i][4] for i in batch])
+        rewards = np.array([self.memory[i][2] for i in batch])
+        dones = np.array([self.memory[i][4] for i in batch])
         
         return states, actions, rewards, next_states, dones
     
@@ -48,7 +43,7 @@ class ReplayBuffer(object):
         
         memory_state = ''
         
-        for states, actions, rewards, next_states, dones in self.data:
+        for states, actions, rewards, next_states, dones in self.memory:
             
             if isinstance(states, list):
                 

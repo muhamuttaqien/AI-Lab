@@ -1,4 +1,5 @@
 import math
+import torch
 
 def log_prob_density(x, mu, std):
     
