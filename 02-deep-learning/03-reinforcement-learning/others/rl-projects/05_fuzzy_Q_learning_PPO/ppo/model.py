@@ -30,7 +30,7 @@ class ActorNetwork(nn.Module):
     
 class CriticNetwork(nn.Module):
     
-    def __init__(self, state_size):
+    def __init__(self, state_size, hidden_size):
         
         super(CriticNetwork, self).__init__()
         

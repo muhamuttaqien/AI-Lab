@@ -28,7 +28,7 @@ batch_size = 64
 
 class Agent():
     
-    def __init__(self, state_size, action_size, hidden_size, name):
+    def __init__(self, state_size, action_size, name):
         
         self.name = name
         
@@ -41,21 +41,21 @@ class Agent():
         self.update_every = update_every
         self.batch_size = batch_size
         
-        self.actor = ActorNetwork(state_size, action_size, hidden_size)
-        self.critic = CriticNetwork(state_size, hidden_sizeˇˇ)
+        self.actor = ActorNetwork(state_size, action_size, self.hidden_size)
+        self.critic = CriticNetwork(state_size, self.hidden_size)
         
         self.actor_optimizer = optim.Adam(self.actor.parameters(), lr=self.lr)
         self.critic_optimizer = optim.Adam(self.critic.parameters(), lr=self.lr, weight_decay=self.weight_decay)
         
-        self.running_state = ZFilter((state_size,), clip=self.clip)
+        self.running_state = ZFilter((state_size,), clip=5)
         self.memory = deque()        
         
         self.action = 0
         
-    def memorize(self, states, actions, rewards, next_states, dones):
+    def memorize(self, state, action, reward, next_state, done):
         
-        states = self.running_state(states)
-        next_states = self.running_state(next_states)
+        state = self.running_state(state)
+        next_state = self.running_state(next_state)
         
         if done: mask = 0
         else: mask = 1
@@ -64,14 +64,14 @@ class Agent():
         
         if done: self.learn()
         
-    def act(self, states):
+    def act(self, state):
         
-        states = self.running_state(states)
-        mu, std = self.actor(torch.Tensor(states).unsqueeze(0))
-        actions = torch.normal(mu, std)
-        actions = actions.data.numpy()
+        state = self.running_state(state)
+        mu, std = self.actor(torch.Tensor(state).unsqueeze(0))
+        action = torch.normal(mu, std)
+        action = action.data.numpy()[0]
         
-        return actions
+        return action
     
     def learn(self):
         
@@ -89,7 +89,7 @@ class Agent():
         self.critic.train()
         
         old_values = self.critic(torch.Tensor(states))
-        returns, advantages = get_gae(rewards, masks, old_values)
+        returns, advantages = self.get_gae(rewards, masks, old_values)
         
         criterion = torch.nn.MSELoss()
         
@@ -112,8 +112,7 @@ class Agent():
                 old_value_samples = old_values[batch_index].detach()
                 
                 values = self.critic(inputs)
-                clipped_values = old_value_samples + torch.clamp(values - old_value_samples, 
-                                                                 -self.clip, self.clip)
+                clipped_values = old_value_samples + torch.clamp(values - old_value_samples, -self.clip, self.clip)
                 
                 critic_loss1 = criterion(clipped_values, return_samples)
                 critic_loss2 = criterion(values, return_samples)
@@ -123,22 +122,24 @@ class Agent():
                 loss, ratio = surrogate_loss(self.actor, advantage_samples, inputs, 
                                              old_policy.detach(), action_samples, batch_index)
                 
-                clipped_ratio = torch.clamp(ratio, 1.0 - self.clop, 1.0 + self.clip)
+                clipped_ratio = torch.clamp(ratio, 1.0 - self.clip, 1.0 + self.clip)
                 
                 clipped_loss = clipped_ratio * advantage_samples
                 actor_loss = -torch.min(loss, clipped_loss).mean()
                 
                 loss = actor_loss + 0.5 * critic_loss
                 
-                actor_optimizer.zero_grad()
-                loss.backward()
-                actor_optimizer.step()
+                self.actor_optimizer.zero_grad()
+                loss.backward(retain_graph=True)
+                self.actor_optimizer.step()
                 
-                critic_optimizer.zero_grad()
+                self.critic_optimizer.zero_grad()
                 loss.backward()
-                critic_optimizer.step()
+                self.critic_optimizer.step()
+                
+        self.memory=deque()
         
-    def get_gae(rewards, masks, values):
+    def get_gae(self, rewards, masks, values):
         
         rewards = torch.Tensor(rewards)
         masks = torch.Tensor(masks)
