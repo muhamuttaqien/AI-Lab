@@ -8,7 +8,7 @@
 ## Online Materials
 * [Reinforcement Learning, CS234 at Stanford University](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
 * [Deep RL Bootcamp, Berkeley CA](https://sites.google.com/view/deep-rl-bootcamp/lectures)
-* [Introduction to Reinforcement Learning, David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ)
+* [UCL Course on RL, David Silver](https://www.davidsilver.uk/teaching/)
 * [DeepMind's Blog](https://deepmind.com/blog)
 * [OpenAI's Blog](https://openai.com/blog/)
 
