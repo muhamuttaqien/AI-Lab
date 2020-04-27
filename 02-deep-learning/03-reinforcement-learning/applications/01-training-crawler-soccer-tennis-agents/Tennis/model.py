@@ -96,3 +96,4 @@ class ActorCriticNetwork():
         critic_input_size = (state_size+action_size) * num_agents
         self.critic = ValueNetwork(critic_input_size, action_size, seed)
         self.critic_target = ValueNetwork(critic_input_size, action_size, seed)
+        
