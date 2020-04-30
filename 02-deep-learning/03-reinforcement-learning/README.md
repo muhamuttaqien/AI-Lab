@@ -1,14 +1,15 @@
 [[RL](https://en.wikipedia.org/wiki/Reinforcement_learning)] Reinforcement Learning Research.
 
 ## Text Books
-* [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
+* [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://s3-us-west-1.amazonaws.com/udacity-drlnd/bookdraft2018.pdf)
 * [Deep Reinforcement Learning: Hands-on by Maxim Lapan](https://www.packtpub.com/data/deep-reinforcement-learning-hands-on-second-edition)
 * [Statistical Reinforcement Learning: Modern Machine Learning Approaches by Masashi Sugiyama](https://www.crcpress.com/Statistical-Reinforcement-Learning-Modern-Machine-Learning-Approaches/Sugiyama/p/book/9781439856895)
 
 ## Online Materials
 * [Reinforcement Learning, CS234 at Stanford University](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
+* [UCL Course on RL, David Silver](https://www.davidsilver.uk/teaching/)
+* [Deep Reinforcement Learning, CS 285 at UC Berkeley](http://rail.eecs.berkeley.edu/deeprlcourse/)
 * [Deep RL Bootcamp, Berkeley CA](https://sites.google.com/view/deep-rl-bootcamp/lectures)
-* [Introduction to Reinforcement Learning, David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ)
 * [DeepMind's Blog](https://deepmind.com/blog)
 * [OpenAI's Blog](https://openai.com/blog/)
 

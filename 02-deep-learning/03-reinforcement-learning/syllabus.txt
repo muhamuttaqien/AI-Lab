@@ -4,11 +4,6 @@ RL INTRODUCTION
 https://www.analyticsvidhya.com/blog/2016/12/getting-ready-for-ai-based-gaming-agents-overview-of-open-source-reinforcement-learning-platforms/
 https://www.analyticsvidhya.com/blog/2017/01/introduction-to-reinforcement-learning-implementation/
 
-DEEP Q LEARNING
-Siraj Rival: https://www.youtube.com/watch?v=aCEvtRtNO-M
-https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
-https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/
-
 RL MARKOV-DECISION PROCESS
 https://towardsdatascience.com/reinforcement-learning-demystified-36c39c11ec14
 https://towardsdatascience.com/reinforcement-learning-demystified-markov-decision-processes-part-1-bf00dda41690
@@ -44,6 +39,8 @@ https://towardsdatascience.com/getting-started-with-reinforcement-learning-and-o
 https://towardsdatascience.com/function-approximation-in-reinforcement-learning-85a4864d566
 
 VALUE-BASED METHOD: DEEP Q-NETWORK
+Siraj Rival: https://www.youtube.com/watch?v=aCEvtRtNO-M
+https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/
 https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 https://pylessons.com/CartPole-reinforcement-learning/
