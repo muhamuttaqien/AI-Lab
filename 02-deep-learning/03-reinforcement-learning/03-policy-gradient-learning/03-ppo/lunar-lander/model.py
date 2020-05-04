@@ -23,7 +23,7 @@ class PolicyNetwork(nn.Module):
                                            nn.Linear(64, 64), 
                                            nn.Tanh(), 
                                            nn.Linear(64, self.action_size), 
-                                           nn.Softmax(dim=-1))
+                                           nn.Softmax(dim=-1)) # discrete action spaces
         
         self.value_layer = nn.Sequential(nn.Linear(state_size, 64), 
                                          nn.Tanh(), 
@@ -39,6 +39,6 @@ class PolicyNetwork(nn.Module):
                                     
     def evaluate(self, state):
     
-        Qsa = self.value_layer(state)
-        return Qsa
+        state_value = self.value_layer(state)
+        return state_value
         
