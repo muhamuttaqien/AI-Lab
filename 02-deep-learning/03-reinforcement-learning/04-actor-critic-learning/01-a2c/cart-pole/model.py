@@ -35,10 +35,10 @@ class ValueNetwork(nn.Module):
         
     def forward(self, state):
         
-        value = F.relu(self.fc1_layer(state))
-        value = self.fc2_layer(value)
+        state_value = F.relu(self.fc1_layer(state))
+        state_value = self.fc2_layer(state_value)
         
-        return value
+        return state_value
     
 class HybridNetwork(nn.Module):
     
@@ -60,7 +60,7 @@ class HybridNetwork(nn.Module):
         logits = self.policy2_layer(logits)
         probs = F.softmax(logits, dim=0)
         
-        value = F.relu(self.value1_layer(state))
-        value = self.value2_layer(value)
+        state_value = F.relu(self.value1_layer(state))
+        state_value = self.value2_layer(state_value)
         
-        return probs, value
+        return probs, state_value
