@@ -24,8 +24,9 @@ class PolicyNetwork(nn.Module):
         self.state_size = state_size
         self.action_size = action_size
         
-        self.fc1_linear = nn.Linear(self.state_size, 256)
-        self.fc2_linear = nn.Linear(256, self.action_size)
+        self.fc1_linear = nn.Linear(self.state_size, 512)
+        self.fc2_linear = nn.Linear(512, 256)
+        self.fc3_linear = nn.Linear(256, self.action_size)
         
         self.reset_parameters()
         
@@ -36,7 +37,8 @@ class PolicyNetwork(nn.Module):
     def forward(self, state):
         
         x = F.relu(self.fc1_linear(state))
-        x = torch.tanh(self.fc2_linear(x))
+        x = F.relu(self.fc2_linear(x))
+        x = torch.tanh(self.fc3_linear(x)) # continuous action spaces
         
         return x
     

@@ -22,7 +22,7 @@ class PolicyNetwork(nn.Module):
         
         x = F.relu(self.fc1_linear(state))
         x = F.relu(self.fc2_linear(x))
-        x = torch.tanh(self.fc3_linear(x))
+        x = torch.tanh(self.fc3_linear(x)) # continuous action spaces
         
         return x
     
