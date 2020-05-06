@@ -1,5 +1,5 @@
 # AI-Lab 
-📁 Created by: Muhammad Angga Muttaqien, on Jan 7, 2018
+📁 Created by: Muhammad Angga Muttaqien, in early 2018
 
 🔬 Absolutely comfort lab for me to work around with my own AIs and to empirically observe how powerful and impactful these technologies are. The key research topics are listed as follows:
 
