@@ -51,6 +51,8 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 The time will come soon.
 ```
 
+You can instantly copy any folder on the project by executing this command: svn checkout https://github.com/muhamuttaqien/AI-Lab/trunk/02-deep-learning
+
 ## Dependencies
 
 This lab requires **Python 3.7.3** and the following Python libraries installed:
