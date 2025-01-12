@@ -39,7 +39,7 @@ The best way to get deeper into AI technology is to get hands-on with it. In 201
 ```text
 1. Dynamic Programming Method for MDPs
 2. Monte Carlo Method
-3. Temporal-Difference Method (Sarsa, Sarsamax, Expected Sarsa)
+3. Temporal-Difference Method (Sarsa, Sarsamax/Q-Learning, Expected Sarsa)
 4. Value-Based Method (DQN, Double-DQN, PER-DQN, Dueling-DQN, Noisy-DQN, Distributional-DQN, Rainbow-DQN)
 5. Policy-Based Method (Reinforce, TRPO, PPO)
 6. Actor-Critic Method (A2C/A3C, GAE, DDPG)
